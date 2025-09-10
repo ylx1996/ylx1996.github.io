@@ -9,9 +9,17 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">
+    <!-- <h3 class="author__name">
         {{ author.name | split: ' (' | first }}<br>
         {{ author.name | split: ' (' | last | remove: ')' }}
+    </h3> -->
+    <h3 class="author__name" style="text-align: center; line-height: 1.5; font-size: 1.2em; margin: 0 auto; padding: 10px 0;">
+        <span style="display: block; font-family: 'Arial', sans-serif; font-weight: 700; color: #333;">
+            {{ author.name | split: ' (' | first }}
+        </span><br>
+        <span style="display: block; font-family: 'Noto Sans SC', sans-serif; font-weight: 400; color: #555; font-size: 0.9em;">
+            {{ author.name | split: ' (' | last | remove: ')' }}
+        </span>
     </h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
