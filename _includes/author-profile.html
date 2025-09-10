@@ -10,8 +10,8 @@
 
   <div class="author__content">
     <h3 class="author__name">
-        {{ author.name.en }}<br>
-        {{ author.name.zh }}
+        {{ author.name | split: ' (' | first }}<br>
+        {{ author.name | split: ' (' | last | remove: ')' }}
     </h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
