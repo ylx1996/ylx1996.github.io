@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Lingxiao Yang <br> 杨凌霄"
+title                    : "Lingxiao Yang (杨凌霄)"
 description              : "Focusing on blockchain system scalability and security."
 repository               : "ylx1996/ylx1996.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,7 +21,7 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Lingxiao Yang (杨凌霄)"
+  name             : "Lingxiao Yang<br>杨凌霄"
   avatar           : "images/lx_profile.jpg"
   bio              : ""
   location         : "Xi'an, China"
