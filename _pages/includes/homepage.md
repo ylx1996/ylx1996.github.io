@@ -1,5 +1,4 @@
 # 📎 Homepages
-- Personal Pages: https://rayeren.github.io (updated recently🔥)
-- Linkedin: https://www.linkedin.com/in/rayeren
-- Google Scholar: https://scholar.google.com/citations?user=4FA6C0AAAAAJ
-- DBLP: https://dblp.org/pid/75/6568-6.html
+- Linkedin: https://www.linkedin.com/in/lingxiao-yang-808a1a284
+- Google Scholar: https://scholar.google.com/citations?user=NQ0z_lgAAAAJ
+- DBLP: https://dblp.org/pid/56/7126.html
