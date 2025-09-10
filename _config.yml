@@ -21,7 +21,9 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Lingxiao Yang<br>杨凌霄"
+  name:
+    en: "Lingxiao Yang"
+    zh: "杨凌霄"
   avatar           : "images/lx_profile.jpg"
   bio              : ""
   location         : "Xi'an, China"
