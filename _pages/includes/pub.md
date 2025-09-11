@@ -5,7 +5,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) \\
+[Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/document/10272518) [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) | [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/230720icdcs-slide-yang.pptx)\\
 **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen
 
 - This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.
