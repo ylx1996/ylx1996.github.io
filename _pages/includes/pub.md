@@ -1,15 +1,12 @@
 
 # 📝 Publications 
-## 🚀 Layer 2 Performance Optimization
-
+## 🚀 Layer-2 Performance Optimization
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10272518) \\
+[Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10272518) \\
 **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen
-
-[**Project**](https://speechresearch.github.io/fastspeech/) <strong><span class='show_paper_citations' data=14></span></strong>
 
 - FastSpeech is the first fully parallel end-to-end speech synthesis model.
 - **Academic Impact**: This work is included by many famous speech synthesis open-source projects, such as [ESPNet ![](https://img.shields.io/github/stars/espnet/espnet?style=social)](https://github.com/espnet/espnet). Our work are promoted by more than 20 media and forums, such as [机器之心](https://mp.weixin.qq.com/s/UkFadiUBy-Ymn-zhJ95JcQ)、[InfoQ](https://www.infoq.cn/article/tvy7hnin8bjvlm6g0myu).
