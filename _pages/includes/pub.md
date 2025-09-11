@@ -5,17 +5,17 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10272518) \\
+[Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) \\
 **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen
 
-- FastSpeech is the first fully parallel end-to-end speech synthesis model.
-- **Academic Impact**: This work is included by many famous speech synthesis open-source projects, such as [ESPNet ![](https://img.shields.io/github/stars/espnet/espnet?style=social)](https://github.com/espnet/espnet). Our work are promoted by more than 20 media and forums, such as [机器之心](https://mp.weixin.qq.com/s/UkFadiUBy-Ymn-zhJ95JcQ)、[InfoQ](https://www.infoq.cn/article/tvy7hnin8bjvlm6g0myu).
-- **Industry Impact**: FastSpeech has been deployed in [Microsoft Azure TTS service](https://techcommunity.microsoft.com/t5/azure-ai/neural-text-to-speech-extends-support-to-15-more-languages-with/ba-p/1505911) and supports 49 more languages with state-of-the-art AI quality. It was also shown as a text-to-speech system acceleration example in [NVIDIA GTC2020](https://resources.nvidia.com/events/GTC2020s21420).
+- This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.
+- Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol), achieving a new trade-off between decentralization and scalability for PCNs.
 </div>
 </div>
-  
 
-- ``ICML 2019`` <span style="color:red">(Oral)</span> [Almost Unsupervised Text to Speech and Automatic Speech Recognition](https://pdfs.semanticscholar.org/9075/a3e6271e5ef4953491488d1776527e632408.pdf), **Yi Ren**, Xu Tan, Tao Qin, et al.  \| [**Project**](https://speechresearch.github.io/unsuper/) 
+- ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
+
+<!--  - ``ICML 2019`` <span style="color:red">(Oral)</span> [Almost Unsupervised Text to Speech and Automatic Speech Recognition](https://pdfs.semanticscholar.org/9075/a3e6271e5ef4953491488d1776527e632408.pdf), **Yi Ren**, Xu Tan, Tao Qin, et al.  \| [**Project**](https://speechresearch.github.io/unsuper/) -->
 
 ## 👄 TalkingFace & Avatar
 
