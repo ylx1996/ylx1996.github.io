@@ -7,7 +7,7 @@
 # 💬 Invited Talks
 - *2025.05*, INFOCOM 2025 \| [\[Main Technical Program\]](https://infocom2025.ieee-infocom.org/program/main-technical-program)
 - *2023.07*, ICDCS 2023 \| [\[Main Conference Program\]](https://icdcs2023.icdcs.org/programs/)
-- *2020.12*, NaNA 2019 \| [\[Main Conference Program\]](http://www.nana-conference.org/program2020.html)
+- *2020.12*, NaNA 2020 \| [\[Main Conference Program\]](http://www.nana-conference.org/program2020.html)
 - *2019.10*, NaNA 2019 \| [\[Main Conference Program\]](http://www.nana-conference.org/program2019.html)
 
 # 🔬 Academic Services
