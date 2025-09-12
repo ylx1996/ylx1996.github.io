@@ -32,11 +32,19 @@
 - `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang\***, Xiangshang Gao, Zesong Dong, Chen Wang.
 
 
-## 📚 Machine Translation 
+## 📚 Blockchain Sharding
 
-- ``AAAI 2021`` [UWSpeech: Speech to Speech Translation for Unwritten Languages](https://arxiv.org/abs/2006.07926), Chen Zhang, Xu Tan, **Yi Ren**, et al. \| [**Project**](https://speechresearch.github.io/uwspeech/)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TC 2025</div><img src='images/tc25.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains](https://ieeexplore.ieee.org/abstract/document/10949782/), **Lingxiao Yang**, Xuewen Dong, Wei Wang, Sheng Gao, Qiang Qu, Wensheng Tian, Yulong Shen. \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/HiCoCS_High_Concurrency_Cross-Sharding_on_Permissioned_Blockchains.pdf) \| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/TC25-Intro.pptx)
+
+- This paper proposes ​​HiCoCS (High Concurrency Cross-Sharding)​​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
+
+- HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs in Hyperledger Fabric. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy, all while maintaining high efficiency and low overhead. The work is a significant step towards scalable and secure enterprise blockchain applications.
+</div>
+</div>
 
 
-## Others
-- `NeurIPS 2023` [Unsupervised Video Domain Adaptation for Action Recognition: A Disentanglement Perspective](https://openreview.net/forum?id=Rp4PA0ez0m), Pengfei Wei, Lingdong Kong, Xinghua Qu, **Yi Ren**, et al.
-- ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren**
+## 📖 SoK
+- `BlockSys 2024` [A Survey on Blockchain Scalability](https://link.springer.com/chapter/10.1007/978-981-96-1411-0_11), Wei Tong, Jian Li, **Lingxiao Yang\***, et al.
