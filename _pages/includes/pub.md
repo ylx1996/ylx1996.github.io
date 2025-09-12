@@ -8,13 +8,13 @@
 [Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/document/10272518), **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen. \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) \| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/230720icdcs-slide-yang.pptx)
 
 - This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.
-- Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol), achieving a new trade-off between decentralization and scalability for PCNs.
+- Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol).
 </div>
 </div>
 
 - ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
-
-<!--  - ``ICML 2019`` <span style="color:red">(Oral)</span> [Almost Unsupervised Text to Speech and Automatic Speech Recognition](https://pdfs.semanticscholar.org/9075/a3e6271e5ef4953491488d1776527e632408.pdf), **Yi Ren**, Xu Tan, Tao Qin, et al.  \| [**Project**](https://speechresearch.github.io/unsuper/) -->
+</div>
+</div>
 
 ## ⛓️ Blockchain Data Interaction
 
@@ -27,10 +27,11 @@
 </div>
 </div>
 
-- `IoT-J 2023` [TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive](https://ieeexplore.ieee.org/abstract/document/10198563), Wei Tong, Xuewen Dong, Yushu Zhang, Zongyang Zhang, **Lingxiao Yang**, Weidong Yang, Yulong Shen.
-
 - `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang\***, Xiangshang Gao, Zesong Dong, Chen Wang.
 
+- `IoT-J 2023` [TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive](https://ieeexplore.ieee.org/abstract/document/10198563), Wei Tong, Xuewen Dong, Yushu Zhang, Zongyang Zhang, **Lingxiao Yang**, Weidong Yang, Yulong Shen.
+</div>
+</div>
 
 ## 📚 Blockchain Sharding
 
@@ -41,10 +42,24 @@
 
 - This paper proposes ​​HiCoCS (High Concurrency Cross-Sharding)​​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
 
-- HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs in Hyperledger Fabric. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy, all while maintaining high efficiency and low overhead. The work is a significant step towards scalable and secure enterprise blockchain applications.
+- HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs in Hyperledger Fabric. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy, all while maintaining high efficiency and low overhead.
 </div>
 </div>
 
 
 ## 📖 SoK
 - `BlockSys 2024` [A Survey on Blockchain Scalability](https://link.springer.com/chapter/10.1007/978-981-96-1411-0_11), Wei Tong, Jian Li, **Lingxiao Yang\***, et al.
+</div>
+</div>
+
+
+## Others
+- `JISE 2023` [Link-ability: A Compatibility Prediction Method of Wireless Service based on Markov Process](https://openurl.ebsco.com/EPDB%3Agcd%3A1%3A14493473/detailv2?sid=ebsco%3Aplink%3Ascholar&id=ebsco%3Agcd%3A173635392&crl=c&link_origin=scholar.google.com.hk), Shiyang Ma, Yulong Shen, Xuewen Dong, Wei Tong, **Lingxiao Yang**.
+
+- `NaNA 2022` [Link-ability: A Prediction Method of Web Service Compatibility based on Markov Process](https://ieeexplore.ieee.org/abstract/document/9985078), Shiyang Ma, Yahui Li, Zhonghua Wang, Di Lu, Xuewen Dong, Wei Tong, **Lingxiao Yang**.
+
+- `CJE 2021` [TAKAP: A Lightweight Three‐Party Authenticated Key Agreement Protocol with User Anonymity](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cje.2021.05.010), Hui Qiao, Xuewen Dong, Yulong Shen, Haozhe Liu, **Lingxiao Yang**.
+
+- `NaNA 2020` [B-SDN: A novel blockchain-based software defined network architecture](https://ieeexplore.ieee.org/abstract/document/9353757), Wei Tong, Wensheng Tian, Xuewen Dong, **Lingxiao Yang**, et al.
+
+- `NaNA 2019` [An abnormal transaction detection mechanism on bitcoin](https://ieeexplore.ieee.org/abstract/document/9027529), **Lingxiao Yang**, Xuewen Dong, Siyu Xing, et al.
