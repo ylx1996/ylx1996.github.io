@@ -3,7 +3,7 @@
 - *2021.03 - 2025.06*, Ph.D., Xidian University, Xi'an.
 - *2018.09 - 2021.03*, Master, Xidian University, Xi'an.
 - *2014.08 - 2018.06*, Bachelor, Xidian University, Xi'an.
-- *2011.06 - 2014.06*, Huangpi No.1 High School, Wuhan.
+- *2011.09 - 2014.06*, Huangpi No.1 High School, Wuhan.
 
 # 💬 Invited Talks
 - *2025.05*, INFOCOM 2025 \| [\[Main Technical Program\]](https://infocom2025.ieee-infocom.org/program/main-technical-program)
@@ -17,5 +17,5 @@
 - IEEE Global Communications Conference (GLOBECOM)
 - IEEE International Conference on Networking and Network Applications (NaNA)
 - IEEE Internet of Things Magazine (IoTM)
-- Elsevier Computers \& Security
+- Elsevier Computers & Security
 - Tsinghua Science and Technology
