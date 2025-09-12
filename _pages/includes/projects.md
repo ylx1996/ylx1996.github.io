@@ -11,4 +11,5 @@
 - *2023.03 - 2030.03*, 区块链技术应用与评测, 12M CNY, member.
 
 ## Innovation Fund of Xidian University (西安电子科技大学研究生创新基金)
+- *2023.01 - 2023.12*, “以链治链”的跨链交互监管技术研究, 20K CNY, participant.
 - *2021.01 - 2021.12*, 区块链可扩展性优化技术研究, 15K CNY, leader.
