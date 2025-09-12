@@ -13,8 +13,7 @@
 </div>
 
 - ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
-</div>
-</div>
+
 
 ## ⛓️ Blockchain Data Interaction
 
@@ -30,8 +29,7 @@
 - `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang\***, Xiangshang Gao, Zesong Dong, Chen Wang.
 
 - `IoT-J 2023` [TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive](https://ieeexplore.ieee.org/abstract/document/10198563), Wei Tong, Xuewen Dong, Yushu Zhang, Zongyang Zhang, **Lingxiao Yang**, Weidong Yang, Yulong Shen.
-</div>
-</div>
+
 
 ## 📚 Blockchain Sharding
 
@@ -40,17 +38,16 @@
 
 [HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains](https://ieeexplore.ieee.org/abstract/document/10949782/), **Lingxiao Yang**, Xuewen Dong, Wei Wang, Sheng Gao, Qiang Qu, Wensheng Tian, Yulong Shen. \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/HiCoCS_High_Concurrency_Cross-Sharding_on_Permissioned_Blockchains.pdf) \| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/TC25-Intro.pptx)
 
-- This paper proposes ​​HiCoCS (High Concurrency Cross-Sharding)​​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
+- This paper proposes ​​HiCoCS​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
 
-- HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs in Hyperledger Fabric. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy, all while maintaining high efficiency and low overhead.
+- HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy.
 </div>
 </div>
 
 
 ## 📖 SoK
 - `BlockSys 2024` [A Survey on Blockchain Scalability](https://link.springer.com/chapter/10.1007/978-981-96-1411-0_11), Wei Tong, Jian Li, **Lingxiao Yang\***, et al.
-</div>
-</div>
+
 
 
 ## Others
