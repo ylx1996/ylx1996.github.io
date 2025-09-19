@@ -26,7 +26,7 @@
 </div>
 </div>
 
-- `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang\***, Xiangshang Gao, Zesong Dong, Chen Wang.
+- `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang**, Xiangshang Gao, Zesong Dong, Chen Wang.
 
 - `IoT-J 2023` [TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive](https://ieeexplore.ieee.org/abstract/document/10198563), Wei Tong, Xuewen Dong, Yushu Zhang, Zongyang Zhang, **Lingxiao Yang**, Weidong Yang, Yulong Shen.
 
