@@ -1,6 +1,6 @@
 
 # 📝 Publications 
-## 🚀 Layer-2 Performance Optimization
+## 🚀 Blockchain Performance Optimization
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -15,7 +15,7 @@
 - ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
 
 
-## ⛓️ Blockchain Data Interaction
+## ⛓️ Trusted Data Interaction
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">INFOCOM 2025</div><img src='images/infocom25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -31,7 +31,7 @@
 - `IoT-J 2023` [TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive](https://ieeexplore.ieee.org/abstract/document/10198563), Wei Tong, Xuewen Dong, Yushu Zhang, Zongyang Zhang, **Lingxiao Yang**, Weidong Yang, Yulong Shen.
 
 
-## 📚 Blockchain Sharding
+## 📚 Scaling Blockchain via Sharding
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TC 2025</div><img src='images/tc25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
