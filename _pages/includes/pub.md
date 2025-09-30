@@ -57,6 +57,6 @@
 
 - `CJE 2021` [TAKAP: A Lightweight Three‐Party Authenticated Key Agreement Protocol with User Anonymity](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cje.2021.05.010), Hui Qiao, Xuewen Dong, Yulong Shen, Haozhe Liu, **Lingxiao Yang**.
 
-- `NaNA 2020` [B-SDN: A novel blockchain-based software defined network architecture](https://ieeexplore.ieee.org/abstract/document/9353757), Wei Tong, Wensheng Tian, Xuewen Dong, **Lingxiao Yang**, et al.
+- `NaNA 2020` [B-SDN: A Novel Blockchain-based Software Defined Network Architecture](https://ieeexplore.ieee.org/abstract/document/9353757), Wei Tong, Wensheng Tian, Xuewen Dong, **Lingxiao Yang**, et al.
 
-- `NaNA 2019` [An abnormal transaction detection mechanism on bitcoin](https://ieeexplore.ieee.org/abstract/document/9027529), **Lingxiao Yang**, Xuewen Dong, Siyu Xing, et al.
+- `NaNA 2019` [An Abnormal Transaction Detection Mechanism on Bitcoin](https://ieeexplore.ieee.org/abstract/document/9027529), **Lingxiao Yang**, Xuewen Dong, Siyu Xing, et al.
