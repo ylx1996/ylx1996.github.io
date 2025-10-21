@@ -1,4 +1,4 @@
-# ✊ Team
+# ✊ Team <img src='images/snnu.png' style="width: 2em;">
 Dr. Yang, along with undergraduate students from SNNU, has established the "Academic Bridge" research group, which currently consists of 5 subgroups and primarily conducts research in the Web3+AI direction.
 
 ## "Academic Bridge" Projects
