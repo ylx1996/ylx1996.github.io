@@ -17,4 +17,5 @@
 - IEEE International Conference on Networking and Network Applications (NaNA)
 - IEEE Internet of Things Magazine (IoTM)
 - Elsevier Computers & Security
+- Springer The Journal of Supercomputing
 - Tsinghua Science and Technology
