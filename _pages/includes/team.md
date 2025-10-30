@@ -9,4 +9,4 @@ Dr. Yang, along with undergraduate students from SNNU, has established the "Acad
 - Optimization of Incremental Data Cross-Chain Synchronization Based on MMRs
 
 ## "Academic Bridge" Courses
-- [Python Introduction & Practice](https://zhangenze-1307536272.cos.ap-guangzhou.myqcloud.com/html/python-lesson/index.html), Lecturer: Enze Zhang (张恩泽)
+- [Python Introduction & Practice](https://zhangenze-1307536272.cos.ap-guangzhou.myqcloud.com/html/python-lesson/index.html), [bilibili](https://space.bilibili.com/517816382/lists?sid=6555063&spm_id_from=333.788.0.0), Lecturer: Enze Zhang (张恩泽)
