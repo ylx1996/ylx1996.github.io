@@ -12,5 +12,5 @@ Dr. Yang, along with undergraduate students from SNNU, has established the "Acad
 - [Python Introduction & Practice](https://zhangenze-1307536272.cos.ap-guangzhou.myqcloud.com/html/python-lesson/index.html), [bilibili](https://space.bilibili.com/517816382/lists?sid=6555063&spm_id_from=333.788.0.0), Lecturer: Enze Zhang (张恩泽)
 
 ## "Academic Bridge" Group Meetings
-- [251012-启动会](https://github.com/ylx1996/ylx1996.github.io/blob/main/_meetings/251012.pdf)
-- [251024-从入门到精通：学术论文的阅读、思考与呈现](https://github.com/ylx1996/ylx1996.github.io/blob/main/_meetings/251024.pdf)
+- [20251012-启动会](https://github.com/ylx1996/ylx1996.github.io/blob/main/_meetings/20251012.pdf)
+- [20251024-从入门到精通：学术论文的阅读、思考与呈现](https://github.com/ylx1996/ylx1996.github.io/blob/main/_meetings/20251024.pdf)
