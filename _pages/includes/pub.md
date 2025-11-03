@@ -12,6 +12,8 @@
 </div>
 </div>
 
+- ``manuscript 2025`` SHARE: Optimizing Secure Hub Allocation and Routing Efficiency in Payment Channel Networks, **Lingxiao Yang**, Xuewen Dong, Wei Wang, et al.
+
 - ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
 
 
@@ -25,6 +27,8 @@
 - This paper proposes ​​AsyncSC​​, a novel asynchronous sidechain framework designed to enable secure and efficient multi-domain data exchange for the Internet of Things (IoT). The key innovation is addressing the limitation of existing sidechain solutions that require synchronous network conditions, which are often impractical for resource-constrained and intermittently connected IoT devices. AsyncSC achieves high performance and security in asynchronous environments through a new cryptographic primitive and a transaction ordering mechanism.
 </div>
 </div>
+
+- ``manuscript 2025`` AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things, **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, et al.
 
 - `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang**, Xiangshang Gao, Zesong Dong, Chen Wang.
 
