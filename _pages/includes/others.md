@@ -13,7 +13,7 @@
 # 🔬 Academic Services
 ## Technical Program Committee/Editorial Board
 - [IEEE International Conference on Networking and Network Applications (NaNA)](http://www.nana-conference.org/), TPC, 2023-2024
-- [ELSP Blockchain](https://www.elspub.com/journals/blockchain/home/)(EiC: Prof. Xiaotie Deng), Youth Editorial Board, 2025-Now
+- [ELSP Blockchain](https://www.elspub.com/journals/blockchain/home/) (EiC: [Prof. Xiaotie Deng](https://cfcs.pku.edu.cn/people/faculty/xiaotiedeng/index.htm)), Youth Editorial Board, 2025-Now
 
 ## Peer Reviewer
 - IEEE Internet of Things Journal (IoT-J)
