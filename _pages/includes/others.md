@@ -11,6 +11,10 @@
 - *2019.10*, NaNA 2019 \| [\[Main Conference Program\]](http://www.nana-conference.org/program2019.html)
 
 # 🔬 Academic Services
+## Technical Program Committee/Editorial Board
+- IEEE International Conference on Networking and Network Applications (NaNA), TPC, 2023-2024
+- ELSP Blockchain, Youth Editorial Board, 2025-Now
+
 ## Peer Reviewer
 - IEEE Internet of Things Journal (IoT-J)
 - IEEE Global Communications Conference (GLOBECOM)
