@@ -17,7 +17,7 @@
 - ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
 
 
-## ⛓️ Trusted Data Interaction
+## ⛓️ Trusted Data Interaction via Blockchain
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">INFOCOM 2025</div><img src='images/infocom25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
