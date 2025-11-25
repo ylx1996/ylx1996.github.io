@@ -17,7 +17,7 @@
 - ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
 
 
-## ⛓️ Trusted Data Interaction
+## ⛓️ Trusted Data Interaction via Blockchain
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">INFOCOM 2025</div><img src='images/infocom25.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -29,6 +29,8 @@
 </div>
 
 - ``manuscript 2025`` AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things, **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, et al.
+
+- `TSC 2025` MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead, Xiaojie Guo, Xuewen Dong, Qingsong Yao， **Lingxiao Yang**, Zhiwei Zhang, Ning Xi, Yulong Shen.
 
 - `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang**, Xiangshang Gao, Zesong Dong, Chen Wang.
 
