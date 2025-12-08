@@ -1,5 +1,5 @@
 # 🔥 News
-- *2025.12*: 🎉 [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) has been selected as an [IEEE Fellow Class of 2026](https://mp.weixin.qq.com/s/dry37uWwwqvnigM8mcmOZA?scene=1&click_id=2), congratulations !
+- *2025.12*: 🎉 [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) has been selected as an [IEEE Fellow Class of 2026](https://ieee-org.widen.net/s/qqrqr2nrk6/fellow-class-announcement-2026), congratulations !
 - *2025.11*: 🎉 One paper is accepted by IEEE Transactions on Services Computing (TSC) ! "MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead" (CCF-A), congratulations to Dr. Xiaojie Guo !
 - *2025.07*: 🎉 Lingxiao joined the team of [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) from the School of Artificial Intelligence and Computer Science, Shaanxi Normal University !
 - *2025.06*: 🎉 Lingxiao is awarded a Ph.D degree from Xidian University ! "Research on Key Technologies for the Optimization of Consortium Blockchain Scalability with Security (联盟链安全可扩展性优化关键技术研究)".
