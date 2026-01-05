@@ -12,9 +12,9 @@
 </div>
 </div>
 
-- ``manuscript 2025`` SHARE: Optimizing Secure Hub Allocation and Routing Efficiency in Payment Channel Networks, **Lingxiao Yang**, Xuewen Dong, Wei Wang, et al.
+- `manuscript 2025` SHARE: Optimizing Secure Hub Allocation and Routing Efficiency in Payment Channel Networks, **Lingxiao Yang**, Xuewen Dong, Wei Wang, et al.
 
-- ``NaNA 2020`` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
+- `NaNA 2020` [Secure Off-chain Payment in Consortium Blockchain System](https://ieeexplore.ieee.org/document/9353819), **Lingxiao Yang**, Xuewen Dong, Wei Tong, et al.
 
 
 ## ⛓️ Trusted Data Interaction via Blockchain
@@ -28,7 +28,7 @@
 </div>
 </div>
 
-- ``TSC 2025`` AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things, **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, Sheng Gao, Wei Tong, Yong Yu, Yulong Shen.
+- `TSC 2025` [AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things](https://ieeexplore.ieee.org/document/11314793/), **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, Sheng Gao, Wei Tong, Yong Yu, Yulong Shen.
 
 - `TSC 2025` [MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead](https://ieeexplore.ieee.org/document/11275826), Xiaojie Guo, Xuewen Dong, Qingsong Yao， **Lingxiao Yang**, Zhiwei Zhang, Ning Xi, Yulong Shen.
 
