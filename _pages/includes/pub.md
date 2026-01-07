@@ -30,7 +30,7 @@
 
 - `TSC 2025` [AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things](https://ieeexplore.ieee.org/document/11314793/), **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, Sheng Gao, Wei Tong, Yong Yu, Yulong Shen.
 
-- `TSC 2025` [MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead](https://ieeexplore.ieee.org/document/11275826), Xiaojie Guo, Xuewen Dong, Qingsong Yao， **Lingxiao Yang**, Zhiwei Zhang, Ning Xi, Yulong Shen.
+- `TSC 2025` [MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead](https://ieeexplore.ieee.org/document/11275826), Xiaojie Guo, Xuewen Dong, Qingsong Yao, **Lingxiao Yang**, Zhiwei Zhang, Ning Xi, Yulong Shen.
 
 - `NaNA 2024` [Blockchain and Oracle-Driven Web3 Architecture for Data Interaction](https://ieeexplore.ieee.org/abstract/document/10679824), Jian Li, Wei Tong, **Lingxiao Yang**, Xiangshang Gao, Zesong Dong, Chen Wang.
 
