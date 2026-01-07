@@ -23,9 +23,9 @@ baidu_site_verification  : code-ZxFK3f4pfb
 author:
   name:            "Lingxiao Yang (杨凌霄)"
   avatar           : "images/lx_profile.jpg"
-  bio              : ""
+  bio              : 
   location         : "SNNU, Xi'an, China"
-  employer         : ""
+  employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=NQ0z_lgAAAAJ&hl=zh-CN"
   email            : "lxyang@snnu.edu.cn"
