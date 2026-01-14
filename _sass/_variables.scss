@@ -6,7 +6,23 @@
    Typography
    ========================================================================== */
 
-$doc-font-size              : 14;
+   $doc-font-size              : 14;
+
+
+   :root {
+      --background:       #0f0f17;       // 深黑蓝灰背景
+      --surface:          #181824;       // 卡片/区块背景
+      --text-primary:     #e0e0ff;       // 主文字（浅紫白）
+      --text-secondary:   #a0a0cc;       // 次要文字
+      --primary:          #9f7aea;       // 主紫色（紫罗兰，推荐 #9f7aea 或 #c084fc）
+      --primary-dark:     #7c3aed;       // 深紫 hover/active
+      --primary-light:    #d6bcfa;       // 浅紫 accent
+      --link:             #c084fc;       // 链接色
+      --link-hover:       #e9d8fd;       // hover
+      --border:           #2d2d44;       // 分隔线
+      --code-bg:          #1e1e38;       // 代码块背景
+      --shadow:           rgba(0, 0, 0, 0.6); // 阴影
+    }
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
@@ -57,11 +73,14 @@ $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
-$background-color           : #fff;
+//$background-color           : #fff;
+$background-color:       #0f0f17;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
+//$text-color                 : $dark-gray;
+$text-color:             #e0e0ff;
 $border-color               : $lighter-gray;
+$brand-color:            #9f7aea;     // 新增紫
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;
@@ -94,7 +113,8 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
+//$link-color                 : $info-color;
+$link-color:             #c084fc;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;

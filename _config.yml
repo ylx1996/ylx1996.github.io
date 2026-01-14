@@ -100,6 +100,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # Conversion
 markdown: kramdown
 highlighter: rouge
+rouge_theme: monokai.sublime
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false

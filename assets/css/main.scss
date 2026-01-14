@@ -10,6 +10,42 @@
  *
 */
 
+//@charset "utf-8";
+
+:root {
+  color-scheme: dark;           // 告诉浏览器这是暗色方案
+}
+
+body {
+  background: var(--background, #0f0f17);
+  color: var(--text-primary, #e0e0ff);
+}
+
+// 覆盖常见元素
+.container, .section, .card, .publication, .project {
+  background: var(--surface, #181824) !important;
+  border-color: var(--border, #2d2d44) !important;
+  box-shadow: 0 4px 20px var(--shadow, rgba(0,0,0,0.6)) !important;
+}
+
+a, a:visited {
+  color: var(--link, #c084fc);
+}
+a:hover {
+  color: var(--link-hover, #e9d8fd);
+  text-decoration: underline;
+}
+
+h1, h2, h3, .name {
+  color: var(--primary, #9f7aea);
+}
+
+// 按钮、标签等
+.btn, .tag {
+  background: var(--primary, #9f7aea);
+  color: white;
+}
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
