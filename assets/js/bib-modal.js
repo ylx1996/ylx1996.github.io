@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
         bib = bib.replace(/}/g, '\n}');
         // 额外处理 @ 开头那一行（可选，让它单独一行）
         bib = bib.replace(/^@/, '@\n');
+        
+        // 在美化后额外处理字段名对齐
+        bib = bib.replace(/^(\s*[\w-]+)\s*=\s*/gm, '  $1 = ');  // 字段名右对齐 =
+        // 去掉多余的空行
+        bib = bib.replace(/\n\s*\n/g, '\n');
   
         // Step 3: 设置到 <code> 里
         bibCode.textContent = bib.trim();  // trim 去掉多余首尾空行
