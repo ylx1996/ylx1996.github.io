@@ -185,3 +185,23 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+.bib-modal {
+  display: none;
+}
+
+.bib-btn {
+  background: var(--primary, #9f7aea);
+  color: white;
+  border: none;
+  padding: 0.3em 0.7em;
+  margin-left: 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
+.bib-btn:hover {
+  background: var(--primary-dark, #7c3aed);
+}
