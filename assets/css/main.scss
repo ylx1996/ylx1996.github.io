@@ -1,61 +1,82 @@
 ---
 ---
 
-// 直接写死亮模式样式（去掉所有变量切换逻辑）
 body {
   background: #ffffff;
-  color: #222222;
+  color: #333333;  // 标准深灰文字
 }
 
-.masthead, .site-header, .navbar, header {
-  background: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
+.masthead, .site-header, .navbar, header, nav {
+  background: #ffffff !important;  // 强制白色导航栏
+  border-bottom: 1px solid #e0e0e0 !important;  // 浅灰底线
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;  // 轻微阴影，更干净
 }
 
-.page__content, main, .post-content, .archive__item, section {
-  background: #ffffff;
-  color: #222222;
+.site-nav a, .masthead a, nav a {
+  color: #222222 !important;  // 导航文字深黑/灰
 }
 
-.sidebar, .author__content, aside.profile {
-  background: transparent;
+.site-nav a:hover, .masthead a:hover {
+  color: #0066cc !important;  // 恢复默认蓝色 hover（Minimal Mistakes 常见默认）
+  text-decoration: underline;
 }
 
+// 内容区强制白底
+.page__content, main, .post-content, section {
+  background: #ffffff !important;
+  color: #333333 !important;
+}
+
+// 左侧个人信息文字强制黑色（你之前提到过想黑）
 .sidebar h1, .sidebar h2, .sidebar h3,
 .name, .author__name, .site-title,
 .sidebar p, .sidebar div, .sidebar span,
 .profile__name, .research-interest,
 .sidebar a:not(:hover) {
-  color: #000000 !important;  // 左侧文字强制黑色
+  color: #000000 !important;
 }
 
+// 链接整体恢复默认蓝色（不强制紫色）
 a {
-  color: #6b46c1;
+  color: #0066cc;  // 标准链接蓝
   &:hover, &:focus {
-    color: #9f7aea;
+    color: #004080;  // 深蓝 hover
   }
 }
 
+// 标题颜色也恢复默认（不紫色）
 h1, h2, h3, .site-title {
-  color: #9f7aea;  // 紫色标题
+  color: #222222;  // 深灰黑标题（或留空让主题默认）
 }
 
-.card, .publication-item, .project-item, .notice, .paper-box {
-  background: #ffffff;
-  border-color: #e0e0e0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+// 卡片/论文盒子白底
+.card, .publication-item, .project-item, .paper-box {
+  background: #ffffff !important;
+  border-color: #e0e0e0 !important;
 }
 
+// 代码块浅灰
 pre, code, .highlight {
-  background: #f8f9fa;
+  background: #f8f9fa !important;
 }
 
-// 平滑过渡（可选保留，但既然不切换了，可以删掉或保留小效果）
-* {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+// Bib 按钮样式（如果你加了这个，保留；否则可删）
+.bib-btn {
+  background: #0066cc;  // 改回蓝色，与链接一致
+  color: white;
+  border: none;
+  padding: 0.3em 0.7em;
+  margin-left: 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
 }
 
-// 以下是原文件剩余部分，保持不变
+.bib-btn:hover {
+  background: #004080;
+}
+
+// 以下保持原样（@import 和自定义类等）
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
@@ -86,7 +107,7 @@ pre, code, .highlight {
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-// 你的自定义 .paper-box 等保持原样
+// .paper-box 等自定义部分保持不变
 .paper-box {
     display: flex;
     justify-content: left;
@@ -149,25 +170,4 @@ h1:before, .anchor:before {
     color: white;
     background-color: #00369f;
     font-size: .8em;
-}
-
-// Bib 按钮和 modal 样式（如果你加了这个功能，保留；否则可以删）
-.bib-modal {
-  display: none;
-}
-
-.bib-btn {
-  background: #9f7aea;
-  color: white;
-  border: none;
-  padding: 0.3em 0.7em;
-  margin-left: 0.5em;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9em;
-  vertical-align: middle;
-}
-
-.bib-btn:hover {
-  background: #7c3aed;
 }
