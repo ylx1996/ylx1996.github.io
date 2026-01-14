@@ -1,92 +1,97 @@
 ---
----
+---  // 保持 Jekyll front matter
 
-/*
- *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
-
-//@charset "utf-8";
-
-// 暗黑模式 + 紫色主调
+// 先定义自定义 CSS 变量 + 主题规则（放在最前，确保覆盖主题默认）
 :root {
-  color-scheme: light dark;           // 浏览器提示支持 dark
-    
-  // 亮模式（默认）
+  color-scheme: light dark;
+
+  // Light mode (默认)
   --bg:               #ffffff;
-  --surface:          #f8f9fa;
-  --text:             #212529;
-  --text-muted:       #6c757d;
-  --primary:          #9f7aea;      // 主紫
+  --surface:          #ffffff;       // 主内容/卡片背景 → 白
+  --text:             #222222;       // 主文字 → 深灰黑
+  --text-muted:       #555555;
+  --primary:          #9f7aea;       // 你的紫色主调
   --primary-dark:     #7c3aed;
   --link:             #6b46c1;
   --link-hover:       #9f7aea;
-  --border:           #dee2e6;
-  --shadow:           rgba(0,0,0,0.1);
-  --code-bg:          #f6f8fa;
+  --border:           #e0e0e0;
+  --shadow:           rgba(0,0,0,0.08);
+  --code-bg:          #f8f9fa;
+  --sidebar-text:     #000000;       // 左侧文字强制黑
 }
 
 [data-theme="dark"] {
-    --bg:               #0f0f17;
-    --surface:          #181824;
-    --text:             #e0e0ff;
-    --text-muted:       #a0a0cc;
-    --primary:          #c084fc;      // 亮一点的紫 accent
-    --primary-dark:     #9f7aea;
-    --link:             #d6bcfa;
-    --link-hover:       #e9d8fd;
-    --border:           #2d2d44;
-    --shadow:           rgba(0,0,0,0.5);
-    --code-bg:          #1e1e38;
+  --bg:               #0f0f17;
+  --surface:          #181824;
+  --text:             #e0e0ff;
+  --text-muted:       #a0a0cc;
+  --primary:          #c084fc;
+  --primary-dark:     #9f7aea;
+  --link:             #d6bcfa;
+  --link-hover:       #e9d8fd;
+  --border:           #2d2d44;
+  --shadow:           rgba(0,0,0,0.5);
+  --code-bg:          #1e1e38;
+  --sidebar-text:     #e0e0ff;       // 暗黑下恢复浅色
 }
 
-// 应用变量到页面（覆盖原有样式）
+// 强制应用到关键元素（覆盖 Minimal Mistakes 原有样式）
 body {
-    background: var(--bg);
-    color: var(--text);
-    transition: background 0.3s, color 0.3s; // 平滑切换
-  }
-  
-  .container, section, .card, .publication-item, .project-item {
-    background: var(--surface);
-    border-color: var(--border);
-    box-shadow: 0 2px 10px var(--shadow);
-  }
-  
-  a {
-    color: var(--link);
-    &:hover, &:focus {
-      color: var(--link-hover);
-    }
-  }
-  
-  h1, h2, h3, .site-title, .name {
-    color: var(--primary);
-  }
-  
-  // 按钮、标签等
-  .btn-primary, .tag {
-    background: var(--primary);
-    border-color: var(--primary-dark);
-    color: white;
-  }
-  
-  // 代码块、pre 等
-  pre, code {
-    background: var(--code-bg);
-  }
-  
-  // 如果有 navbar/header
-  header, nav {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+.masthead, .site-header, .navbar, header {
+  background: var(--surface) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.page__content, main, .post-content, .archive__item, section {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+.sidebar, .author__content, aside.profile {
+  background: transparent !important;
+}
+
+.sidebar h1, .sidebar h2, .sidebar h3,
+.name, .author__name, .site-title,
+.sidebar p, .sidebar div, .sidebar span,
+.profile__name, .research-interest,
+.sidebar a:not(:hover) {
+  color: var(--sidebar-text) !important;
+}
+
+a {
+  color: var(--link);
+  &:hover, &:focus {
+    color: var(--link-hover);
+  }
+}
+
+h1, h2, h3, .site-title {
+  color: var(--primary);
+}
+
+.card, .publication-item, .project-item, .notice, .paper-box {
+  background: var(--surface) !important;
+  border-color: var(--border) !important;
+  box-shadow: 0 2px 10px var(--shadow) !important;
+}
+
+pre, code, .highlight {
+  background: var(--code-bg) !important;
+}
+
+// 平滑过渡 + 其他
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+// 以下是原文件剩余部分，保持不变
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -116,6 +121,7 @@ body {
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+// 你的自定义 .paper-box 等保持原样
 .paper-box {
     display: flex;
     justify-content: left;
@@ -125,7 +131,6 @@ body {
     border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
     
-
     .paper-box-image{
         justify-content: center;
         display: flex;
@@ -157,10 +162,7 @@ body {
             max-width: 60%;
             order: 2;
         }
-
     }
-
-
 }
 
 $scroll_offset : 2em;

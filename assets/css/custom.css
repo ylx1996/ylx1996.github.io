@@ -1,0 +1,73 @@
+/* 强制亮模式：白色背景 + 黑色/深灰文字 */
+
+/* 整体页面背景 */
+body, html {
+    background-color: #ffffff !important;
+    color: #222222 !important; /* 主文字深灰黑 */
+  }
+  
+  /* 导航栏（顶部 bar） - 改白 */
+  .navbar, nav, .site-header, .site-nav, header[role="banner"] {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0 !important; /* 浅灰底线 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  }
+  
+  .navbar a, .site-nav a, nav a {
+    color: #333333 !important; /* 导航文字深灰 */
+  }
+  .navbar a:hover, .site-nav a:hover {
+    color: #6b46c1 !important; /* 保持你原来的紫色 hover */
+  }
+  
+  /* 主内容区 + 新闻区 + Publications 等 section */
+  .main-content, main, .page__content, .post-content, section, .archive, .news, .publications {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+  }
+  
+  /* 卡片/列表项（如 news li, publication-item） */
+  .card, .publication-item, .project-item, li, .news ul li {
+    background-color: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    color: #222222 !important;
+  }
+  
+  /* 左侧栏（头像 + 个人信息 + 链接） */
+  .sidebar, .author__content, aside, .profile, .left-column, .author {
+    background-color: transparent !important; /* 或 #f9f9f9 如果想浅灰底 */
+  }
+  
+  /* 左侧名字、研究方向、地点等文字 - 强制黑色 */
+  .sidebar h1, .sidebar h2, .sidebar h3,
+  .name, .site-title, .author__name,
+  .sidebar p, .sidebar div, .sidebar span,
+  .profile__name, .author__bio, .research-interest {
+    color: #000000 !important; /* 纯黑 */
+  }
+  
+  /* 左侧链接（Email, Google Scholar 等） */
+  .sidebar a, .author a, .profile a {
+    color: #0066cc !important; /* 蓝色链接，更常见于亮模式；或保持紫 #6b46c1 */
+  }
+  .sidebar a:hover {
+    color: #9f7aea !important;
+  }
+  
+  /* News 标题火焰图标等保持可见 */
+  .news h2, .news strong, .emoji {
+    color: #333 !important;
+  }
+  
+  /* 如果有暗色代码块或特殊区，调亮 */
+  pre, code, .highlight {
+    background: #f6f8fa !important;
+    color: #24292e !important;
+  }
+  
+  /* 响应式：手机端也生效 */
+  @media (max-width: 768px) {
+    .sidebar {
+      background: #ffffff !important;
+    }
+  }
