@@ -16,7 +16,11 @@
 - [ELSP Blockchain](https://www.elspub.com/journals/blockchain/home/) (EiC: [Prof. Xiaotie Deng](https://cfcs.pku.edu.cn/people/faculty/xiaotiedeng/index.htm)), Youth Editorial Board, 2025-Now
 
 ## Peer Reviewer
+<<<<<<< HEAD
 - IEEE Transactions on Cloud Computing (TCC)
+=======
+- IEEE IEEE Transactions on Cloud Computing (TCC)
+>>>>>>> 7efc2c53d8e705f0f8c0a3dd42e81289ee395ba8
 - IEEE Internet of Things Journal (IoT-J)
 - IEEE Global Communications Conference (GLOBECOM)
 - IEEE Internet of Things Magazine (IoTM)
