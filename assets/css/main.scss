@@ -8,81 +8,6 @@ body, html {
   font-family: system-ui, -apple-system, sans-serif;
 }
 
-.masthead, .site-header, .navbar, header, nav {
-  background: #ffffff !important;
-  border-bottom: 1px solid #ddd !important;
-}
-
-.site-nav a, .masthead a {
-  color: #0066cc !important;
-}
-
-.site-nav a:hover {
-  color: #004080 !important;
-}
-
-// 内容区强制白底 + 黑文字
-.page__content, main, .post-content, section, .archive__item {
-  background: #ffffff !important;
-  color: #222222 !important;
-}
-
-// 论文盒子修复：白底 + 黑文字
-.paper-box {
-  background: #ffffff !important;
-  border: 1px solid #e0e0e0 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
-  color: #222222 !important;
-}
-
-.paper-box-text {
-  background: transparent !important;
-  color: #222222 !important;
-}
-
-.paper-box-text p, .paper-box-text li, .paper-box-text span, .paper-box-text strong {
-  color: #222222 !important;
-}
-
-// 图片区域强制白底（去掉蓝背景）
-.paper-box-image {
-  background: #ffffff !important;
-}
-
-.paper-box-image img {
-  background: #ffffff !important;
-}
-
-// 链接统一蓝色
-a, a:visited {
-  color: #0066cc !important;
-}
-
-a:hover, a:focus {
-  color: #004080 !important;
-}
-
-// 标题黑/深灰
-h1, h2, h3, .site-title {
-  color: #222222 !important;
-}
-
-// 代码/预览块
-pre, code, .highlight {
-  background: #f8f9fa !important;
-  color: #222222 !important;
-}
-
-// Bib 按钮蓝色
-.bib-btn {
-  background: #0066cc !important;
-  color: white !important;
-}
-
-.bib-btn:hover {
-  background: #004080 !important;
-}
-
 // 其余 @import 和自定义类保持原样
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
@@ -114,28 +39,72 @@ pre, code, .highlight {
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-// .paper-box 自定义布局保持
 .paper-box {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    // ... 其余不变
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px #efefef solid;
+  padding: 2em 0 2em 0;
+  
+
+  .paper-box-image{
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      order: 2;
+      img {
+          max-width: 400px;
+          box-shadow: 3px 3px 6px #888;
+          object-fit: cover;
+      }
+  }
+  
+  .paper-box-text{
+      max-width: 100%;
+      order: 1;
+  }
+  
+  @include breakpoint($medium) {
+      .paper-box-image{
+          justify-content: left;
+          min-width: 200px;
+          max-width: 40%;
+          order: 1;
+      }
+      
+      .paper-box-text{
+          justify-content: left;
+          padding-left: 2em;
+          max-width: 60%;
+          order: 2;
+      }
+
+  }
+
+
 }
 
-// badge 等保持
+$scroll_offset : 2em;
+h1:before, .anchor:before { 
+  content: ''; 
+  display: block; 
+  position: relative; 
+  width: 0; 
+  height: $scroll_offset; 
+  margin-top: -$scroll_offset;
+}
+
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  margin-top: .5em;
+  margin-left: -.5em;
+  color: white;
+  background-color: #00369f;
+  font-size: .8em;
 }
 
 /* BibTeX Modal - 彻底美化 */

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       btn.addEventListener('click', function() {
         let bib = this.getAttribute('data-bibtex') || '';
         bib = bib.trim().replace(/\\n/g, '\n').replace(/\\"/g, '"');
-  
+        
         // 增强美化
         bib = bib.replace(/@(\w+)\s*{/g, '@$1 {\n  ');
         bib = bib.replace(/}/g, '\n}');
