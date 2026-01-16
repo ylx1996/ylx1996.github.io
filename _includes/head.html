@@ -10,11 +10,27 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <meta http-equiv="cleartype" content="on">
-<head>
-  <base target="_blank">
-</head>
+
+<base target="_blank">
+
+<style>
+  .masthead, .site-header, .greedy-nav {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  a {
+    color: #0000EE !important;
+  }
+  /* 导航栏内的链接颜色适配 */
+  .masthead a {
+    color: #0000EE !important;
+  }
+  /* 站点标题通常保持深色比较好看，如果也要蓝色可删除此段 */
+  .site-title {
+    color: #333333 !important;
+  }
+</style>

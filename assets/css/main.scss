@@ -158,3 +158,42 @@ h1:before, .anchor:before {
   border: 1px solid #d0d7de;
   overflow-x: auto;
 }
+
+/* =======================================================
+   YLX 自定义修改：导航栏白色 + 链接蓝色
+   ======================================================= */
+
+/* 1. 全局链接颜色改为标准蓝 (#0000EE) */
+a {
+  color: #0000EE !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0000AA !important; /* 鼠标悬停深蓝 */
+}
+
+/* 2. 顶部导航栏 (Masthead) 背景改为白色 */
+.masthead, .greedy-nav {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #eeeeee; /* 添加浅灰底边，区分内容区 */
+}
+
+/* 3. 修复导航栏文字颜色
+   因为背景变白了，如果文字原本是白色就会看不见，
+   这里强制把导航栏里的链接和文字改为黑色或深灰 */
+.masthead a, .site-title, .greedy-nav a {
+  color: #333333 !important; 
+}
+
+/* 4. 如果你希望导航栏里的链接也是蓝色的（如你要求“所有链接为蓝色”）
+   请保留下面这一行；如果希望导航栏保持黑色端庄，请删除下面这一行 */
+.masthead a:not(.site-title) {
+  color: #0000EE !important;
+}
+
+/* 5. 确保汉堡菜单（移动端）按钮可见 */
+.greedy-nav .nav-selector {
+    color: #333 !important;
+}
