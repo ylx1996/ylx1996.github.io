@@ -119,34 +119,49 @@ body, html {
     }
   }
 
-  /* --- 底部按钮组 (PDF/PPT/Bib) --- */
+  /* --- 底部按钮组 (PDF/PPT/Bib) 修复对齐版 --- */
   .paper-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px; /* 按钮之间的间距 */
+    gap: 8px;            /* 按钮之间的间距 */
     margin-top: 12px;
-    align-items: center;
-    
-    a, button {
-        display: inline-flex;
-        align-items: center;
-        padding: 4px 10px;
-        font-size: 12px;
-        font-weight: 600;
-        color: #0366d6 !important;
-        background-color: #f1f8ff;
-        border: 1px solid rgba(27,31,35,0.15);
-        border-radius: 4px;
-        text-decoration: none;
-        line-height: 20px;
-        cursor: pointer;
-    }
+    align-items: center; /* 确保子元素垂直居中 */
+  }
 
-    a:hover, button:hover {
-        background-color: #0366d6;
-        color: #ffffff !important;
-        text-decoration: none;
-    }
+  /* 统一 a 标签和 button 标签的样式 */
+  .paper-buttons a, 
+  .paper-buttons button {
+    display: inline-flex;    /* 使用 flex 布局让内部文字居中 */
+    align-items: center;     /* 垂直居中文字 */
+    justify-content: center; /* 水平居中文字 */
+    
+    height: 28px;            /* 关键：强制固定高度，确保大家一样高 */
+    padding: 0 12px;         /* 左右内边距，上下不需要，因为有高度+居中 */
+    margin: 0;               /* 去除 button 默认外边距 */
+    
+    font-size: 12px;
+    font-weight: 600;
+    font-family: inherit;    /* 强制 button 继承系统字体，防止字体不同导致高度偏差 */
+    line-height: 1;          /* 重置行高，避免干扰 */
+    
+    color: #0366d6 !important;
+    background-color: #f1f8ff;
+    border: 1px solid rgba(27,31,35,0.15);
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;  /* 统一盒模型计算 */
+    
+    transition: all 0.2s ease;
+  }
+
+  /* 悬停状态 */
+  .paper-buttons a:hover, 
+  .paper-buttons button:hover {
+    background-color: #0366d6;
+    color: #ffffff !important;
+    border-color: #0366d6;
+    text-decoration: none;
   }
 
   /* --- 桌面端布局 (宽屏) --- */

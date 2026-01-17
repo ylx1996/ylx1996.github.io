@@ -21,15 +21,10 @@
     <div class="paper-buttons">
       <a href="link_to_pdf">PDF</a>
       <a href="link_to_ppt">PPT</a>
-      <button class="bib-btn" data-bibtex="@inproceedings{yang2023optimal, author = {Yang, Lingxiao and Dong, Xuewen and Gao, Sheng and Qu, Qiang and Zhang, Xiaodong and Tian, Wensheng and Shen, Yulong}, title = {Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability}, booktitle = {2023 IEEE 43rd International Conference on Distributed Computing Systems (ICDCS)}, pages = {692--702}, year = {2023}, organization={IEEE}}">BibTeX</button>
+      <button class="bib-btn" data-bibtex="@inproceedings{yang2023optimal, author = {Yang, Lingxiao and Dong, Xuewen and Gao, Sheng and Qu, Qiang and Zhang, Xiaodong and Tian, Wensheng and Shen, Yulong}, title = {Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability}, booktitle = {2023 IEEE 43rd International Conference on Distributed Computing Systems (ICDCS)}, pages = {692--702}, year = {2023}, organization={IEEE}}">Bib</button>
     </div>
 
   </div>
-</div>
-
-- This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.
-- Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol).
-</div>
 </div>
 
 - `manuscript 2025` SHARE: Optimizing Secure Hub Allocation and Routing Efficiency in Payment Channel Networks, **Lingxiao Yang**, Xuewen Dong, Wei Wang, et al.
@@ -54,7 +49,7 @@
     </p>
 
     <p>
-      This paper proposes ​​AsyncSC​​, a novel asynchronous sidechain framework designed to enable secure and efficient multi-domain data exchange for the Internet of Things (IoT). The key innovation is addressing the limitation of existing sidechain solutions that require synchronous network conditions, which are often impractical for resource-constrained and intermittently connected IoT devices. AsyncSC achieves high performance and security in asynchronous environments through a new cryptographic primitive and a transaction ordering mechanism.
+      ​AsyncSC​​'s key innovation​ is addressing the limitation of existing sidechain solutions that require synchronous network conditions, which are often impractical for resource-constrained and intermittently connected IoT devices. AsyncSC achieves high performance and security in asynchronous environments through a new cryptographic primitive and a transaction ordering mechanism.
     </p>
 
     <div class="paper-buttons">
@@ -90,9 +85,6 @@
       <strong>Lingxiao Yang</strong>, Xuewen Dong, Wei Wang, Sheng Gao, Qiang Qu, Wensheng Tian, Yulong Shen.
     </p>
 
-    <p>
-      This paper proposes ​​HiCoCS​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
-    </p>
     <p>
       HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy.
     </p>
