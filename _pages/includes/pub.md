@@ -16,7 +16,7 @@
       <strong>Lingxiao Yang</strong>, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen.
     </p>
 
-    <p>This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing. Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol).</p>
+    <p>This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.</p>
 
     <div class="paper-buttons">
       <a href="link_to_pdf">PDF</a>
@@ -26,14 +26,6 @@
 
   </div>
 </div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/document/10272518), **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen. 
-\| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) 
-\| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/230720icdcs-slide-yang.pptx)
-\| <button class="bib-btn" data-bibtex="@inproceedings{yang2023optimal, author = {Yang, Lingxiao and Dong, Xuewen and Gao, Sheng and Qu, Qiang and Zhang, Xiaodong and Tian, Wensheng and Shen, Yulong}, title = {Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability}, booktitle = {2023 IEEE 43rd International Conference on Distributed Computing Systems (ICDCS)}, pages = {692--702}, year = {2023}, organization={IEEE}}">Bib</button>
 
 - This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.
 - Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol).
@@ -47,13 +39,30 @@
 
 ## ⛓️ Trusted Data Interaction via Blockchain
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">INFOCOM 2025</div><img src='images/infocom25.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">INFOCOM 2025</div>
+      <img src='images/infocom25.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text'>
+    <a href="https://ieeexplore.ieee.org/document/11044780">AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things</a>
+    
+    <p>
+      <strong>Lingxiao Yang</strong>, Xuewen Dong, Zhiguo Wan, Sheng Gao, Wei Tong, Di Lu, Yulong Shen, Xiaojiang Du.
+    </p>
 
-[AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things](https://ieeexplore.ieee.org/document/11044780), **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, Sheng Gao, Wei Tong, Di Lu, Yulong Shen, Xiaojiang Du. \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/AsyncSC_An_Asynchronous_Sidechain_for_Multi-Domain_Data_Exchange_in_Internet_of_Things.pdf) \| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/2025infocom-yang.pptx) \| <button class="bib-btn" data-bibtex="@inproceedings{yang2025asyncsc, title = {Asyncsc: An asynchronous sidechain for multi-domain data exchange in internet of things}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Gao, Sheng and Tong, Wei and Lu, Di and Shen, Yulong and Du, Xiaojiang}, booktitle = {IEEE INFOCOM 2025-IEEE Conference on Computer Communications}, pages = {1--10}, year = {2025}, organization = {IEEE}}">Bib</button>
+    <p>
+      This paper proposes ​​AsyncSC​​, a novel asynchronous sidechain framework designed to enable secure and efficient multi-domain data exchange for the Internet of Things (IoT). The key innovation is addressing the limitation of existing sidechain solutions that require synchronous network conditions, which are often impractical for resource-constrained and intermittently connected IoT devices. AsyncSC achieves high performance and security in asynchronous environments through a new cryptographic primitive and a transaction ordering mechanism.
+    </p>
 
-- This paper proposes ​​AsyncSC​​, a novel asynchronous sidechain framework designed to enable secure and efficient multi-domain data exchange for the Internet of Things (IoT). The key innovation is addressing the limitation of existing sidechain solutions that require synchronous network conditions, which are often impractical for resource-constrained and intermittently connected IoT devices. AsyncSC achieves high performance and security in asynchronous environments through a new cryptographic primitive and a transaction ordering mechanism.
-</div>
+    <div class="paper-buttons">
+      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/AsyncSC_An_Asynchronous_Sidechain_for_Multi-Domain_Data_Exchange_in_Internet_of_Things.pdf">PDF</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/2025infocom-yang.pptx">PPT</a>
+      <button class="bib-btn" data-bibtex="@inproceedings{yang2025asyncsc, title = {Asyncsc: An asynchronous sidechain for multi-domain data exchange in internet of things}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Gao, Sheng and Tong, Wei and Lu, Di and Shen, Yulong and Du, Xiaojiang}, booktitle = {IEEE INFOCOM 2025-IEEE Conference on Computer Communications}, pages = {1--10}, year = {2025}, organization = {IEEE}}">Bib</button>
+    </div>
+  </div>
 </div>
 
 - `TSC 2025` [AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things](https://ieeexplore.ieee.org/document/11314793/), **Lingxiao Yang**, Xuewen Dong, Zhiguo Wan, Sheng Gao, Wei Tong, Yong Yu, Yulong Shen. <button class="bib-btn" data-bibtex="@ARTICLE{yang2025acbaas, title = {AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Gao, Sheng and Tong, Wei and Yu, Yong and Shen, Yulong}, journal = {IEEE Transactions on Services Computing (TSC)}, pages = {1--14}, year = {2025}, organization = {IEEE}}">Bib</button>
@@ -67,17 +76,34 @@
 
 ## 📚 Scaling Blockchain via Sharding
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TC 2025</div><img src='images/tc25.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">TC 2025</div>
+      <img src='images/tc25.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text'>
+    <a href="https://ieeexplore.ieee.org/abstract/document/10949782/">HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains</a>
+    
+    <p>
+      <strong>Lingxiao Yang</strong>, Xuewen Dong, Wei Wang, Sheng Gao, Qiang Qu, Wensheng Tian, Yulong Shen.
+    </p>
 
-[HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains](https://ieeexplore.ieee.org/abstract/document/10949782/), **Lingxiao Yang**, Xuewen Dong, Wei Wang, Sheng Gao, Qiang Qu, Wensheng Tian, Yulong Shen. \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/HiCoCS_High_Concurrency_Cross-Sharding_on_Permissioned_Blockchains.pdf) \| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/TC25-Intro.pptx) \| <button class="bib-btn" data-bibtex="@article{yang2025hicocs, title = {HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Lu, Di and Zhang, Yushu and Shen, Yulong}, journal = {IEEE Transactions on Computers (TC)}, volume = {74}, number = {7}, pages = {2168-2182}, year = {2025}, organization = {IEEE}}">Bib</button>
+    <p>
+      This paper proposes ​​HiCoCS​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
+    </p>
+    <p>
+      HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy.
+    </p>
 
-- This paper proposes ​​HiCoCS​, a novel scheme designed to handle the challenge of highly concurrent cross-shard transactions (CSTxs) in permissioned blockchains, specifically Hyperledger Fabric.
-
-- HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy.
+    <div class="paper-buttons">
+      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/HiCoCS_High_Concurrency_Cross-Sharding_on_Permissioned_Blockchains.pdf">PDF</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/TC25-Intro.pptx">PPT</a>
+      <button class="bib-btn" data-bibtex="@article{yang2025hicocs, title = {HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Lu, Di and Zhang, Yushu and Shen, Yulong}, journal = {IEEE Transactions on Computers (TC)}, volume = {74}, number = {7}, pages = {2168-2182}, year = {2025}, organization = {IEEE}}">Bib</button>
+    </div>
+  </div>
 </div>
-</div>
-
 
 ## 📖 SoK
 - `BlockSys 2024` [A Survey on Blockchain Scalability](https://link.springer.com/chapter/10.1007/978-981-96-1411-0_11), Wei Tong, Jian Li, **Lingxiao Yang\***, et al.
