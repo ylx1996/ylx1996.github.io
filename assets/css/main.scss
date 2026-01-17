@@ -1,6 +1,10 @@
 ---
 ---
 
+// =======================================================
+// 1. 基础设置与 Imports (保持原样)
+// =======================================================
+
 // 强制全局亮模式 + 高对比
 body, html {
   background: #ffffff !important;
@@ -8,7 +12,7 @@ body, html {
   font-family: system-ui, -apple-system, sans-serif;
 }
 
-// 其余 @import 和自定义类保持原样
+// 引入 Jekyll Theme 的核心模块
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
@@ -39,171 +43,7 @@ body, html {
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* =======================================================
-   最终优化版 Paper Box：更协调的图文比例 + 底部操作栏
-   ======================================================= */
-.paper-box {
-  display: flex;
-  flex-direction: column; /* 移动端默认上下排列 */
-  background: #ffffff;
-  padding: 20px;          /* 稍微减小内边距，更精致 */
-  margin-bottom: 24px;
-  border-radius: 8px;
-  border: 1px solid #e1e4e8; /* 颜色加深一点点，增加质感 */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    border-color: #d1d5da;
-  }
-
-  /* --- 图片区域 (Badge 移至外部版) --- */
-  .paper-box-image {
-    width: 100%;
-    margin-bottom: 15px; 
-    
-    /* 1. 包裹容器：改为 Flex 列布局，让 Badge 和图片垂直排列 */
-    & > div {
-       width: 100%;
-       display: flex;           /* 开启 Flex 布局 */
-       flex-direction: column;  /* 垂直排列：上 Badge，下图片 */
-       align-items: flex-start; /* 左对齐 */
-       
-       /* 移除之前的“相框”样式，因为现在边框要加在图片上 */
-       border: none !important; 
-       border-radius: 0;
-       overflow: visible;       /* 允许内容自然显示 */
-    }
-
-    /* 2. Badge 样式：改为普通文档流元素，不再绝对定位 */
-    .badge {
-       position: relative !important; /* 强制取消 absolute */
-       top: auto !important;
-       left: auto !important;
-       margin: 0 0 6px 0 !important;  /* 仅保留底部间距，把图片顶下去 */
-       
-       display: inline-block;
-       padding: 4px 8px;       /* 调整内边距，更精致 */
-       border-radius: 4px;     /* 圆角 */
-       font-size: 12px;
-       font-weight: 600;
-       line-height: 1.2;
-       box-shadow: none;       /* 扁平化，显得干净 */
-       z-index: 1;
-       
-       /* 保持原来的蓝色背景，如果原 CSS 有定义 .badge 颜色则会自动继承 */
-       /* 如果没有，可以解除下面这行的注释：*/
-       /* background-color: #00369f; color: white; */
-    }
-
-    /* 3. 图片样式：边框和圆角移动到这里 */
-    img {
-       display: block;
-       width: 100%;
-       height: auto;
-       object-fit: cover;
-       
-       border-radius: 6px;     /* 图片本身带圆角 */
-       border: 1px solid #eee; /* 图片加细边框 */
-       box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 轻微阴影 */
-    }
-  }
-
-  /* --- 文字区域 --- */
-  .paper-box-text {
-    width: 100%;
-    
-    /* 标题样式优化 */
-    h3, a {
-        font-weight: 700;
-        color: #24292e !important; /* 强制黑色，显得专业 */
-        text-decoration: none;
-        font-size: 1.1em;
-        line-height: 1.4;
-        margin-bottom: 6px;
-        display: block;
-    }
-    
-    /* 标题悬停变蓝 */
-    h3:hover, a:hover {
-        color: #0000EE !important;
-        text-decoration: underline;
-    }
-    
-    /* 作者样式 */
-    p {
-        margin-bottom: 8px;
-        color: #586069;
-        font-size: 0.95em;
-        line-height: 1.6;
-    }
-  }
-
-  /* --- 底部按钮组 (PDF/PPT/Bib) 修复对齐版 --- */
-  .paper-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;            /* 按钮之间的间距 */
-    margin-top: 12px;
-    align-items: center; /* 确保子元素垂直居中 */
-  }
-
-  /* 统一 a 标签和 button 标签的样式 */
-  .paper-buttons a, 
-  .paper-buttons button {
-    display: inline-flex;    /* 使用 flex 布局让内部文字居中 */
-    align-items: center;     /* 垂直居中文字 */
-    justify-content: center; /* 水平居中文字 */
-    
-    height: 28px;            /* 关键：强制固定高度，确保大家一样高 */
-    padding: 0 12px;         /* 左右内边距，上下不需要，因为有高度+居中 */
-    margin: 0;               /* 去除 button 默认外边距 */
-    
-    font-size: 12px;
-    font-weight: 600;
-    font-family: inherit;    /* 强制 button 继承系统字体，防止字体不同导致高度偏差 */
-    line-height: 1;          /* 重置行高，避免干扰 */
-    
-    color: #0366d6 !important;
-    background-color: #f1f8ff;
-    border: 1px solid rgba(27,31,35,0.15);
-    border-radius: 4px;
-    text-decoration: none;
-    cursor: pointer;
-    box-sizing: border-box;  /* 统一盒模型计算 */
-    
-    transition: all 0.2s ease;
-  }
-
-  /* 悬停状态 */
-  .paper-buttons a:hover, 
-  .paper-buttons button:hover {
-    background-color: #0366d6;
-    color: #ffffff !important;
-    border-color: #0366d6;
-    text-decoration: none;
-  }
-
-  /* --- 桌面端布局 (宽屏) --- */
-  @include breakpoint($medium) {
-    flex-direction: row; /* 改为左右排列 */
-    align-items: flex-start;
-    
-    .paper-box-image {
-      flex: 0 0 240px; /* 固定宽度 240px */
-      max-width: 240px;
-      margin-bottom: 0;
-      margin-right: 24px;
-    }
-    
-    .paper-box-text {
-      flex: 1; /* 占满剩余空间 */
-    }
-  }
-}
-
+// 锚点定位偏移 (防止被顶部导航栏遮挡)
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
   content: ''; 
@@ -214,138 +54,9 @@ h1:before, .anchor:before {
   margin-top: -$scroll_offset;
 }
 
-.badge {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: absolute;
-  margin-top: .5em;
-  margin-left: -.5em;
-  color: white;
-  background-color: #00369f;
-  font-size: .8em;
-}
-
-/* BibTeX Modal - 彻底美化 */
-.bib-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
-}
-
-.bib-modal-content {
-  background: #ffffff !important;
-  color: #000000 !important;
-  width: 90%;
-  max-width: 820px;
-  max-height: 88vh;
-  overflow-y: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-  padding: 28px;
-  position: relative;
-}
-
-.bib-close {
-  position: absolute;
-  top: 12px;
-  right: 20px;
-  font-size: 40px;
-  cursor: pointer;
-  color: #777;
-}
-
-.bib-close:hover {
-  color: #000;
-}
-
-#bibContent code {
-  display: block;
-  background: #f5f7fa !important;
-  color: #000000 !important;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
-  font-size: 14.5px;
-  line-height: 1.55;
-  padding: 20px;
-  border-radius: 8px;
-  white-space: pre-wrap;
-  word-break: break-all;
-  border: 1px solid #d0d7de;
-  overflow-x: auto;
-}
-
-/* =======================================================
-   YLX 自定义修改：导航栏白色 + 链接蓝色
-   ======================================================= */
-
-/* 1. 全局链接颜色改为标准蓝 (#0000EE) */
-a {
-  color: #0000EE !important;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #0000AA !important; /* 鼠标悬停深蓝 */
-}
-
-/* 2. 顶部导航栏 (Masthead) 背景改为白色 */
-.masthead, .greedy-nav {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #eeeeee; /* 添加浅灰底边，区分内容区 */
-}
-
-/* 3. 修复导航栏文字颜色
-   因为背景变白了，如果文字原本是白色就会看不见，
-   这里强制把导航栏里的链接和文字改为黑色或深灰 */
-.masthead a, .site-title, .greedy-nav a {
-  color: #333333 !important; 
-}
-
-/* 4. 如果你希望导航栏里的链接也是蓝色的（如你要求“所有链接为蓝色”）
-   请保留下面这一行；如果希望导航栏保持黑色端庄，请删除下面这一行 */
-.masthead a:not(.site-title) {
-  color: #0000EE !important;
-}
-
-/* 5. 确保汉堡菜单（移动端）按钮可见 */
-.greedy-nav .nav-selector {
-    color: #333 !important;
-}
-
-/* =======================================================
-   BibTeX Popover & Button 美化 (替换原有 Modal 样式)
-   ======================================================= */
-
-/* 1. 美化 Bib 按钮 */
-.bib-btn {
-  display: inline-block;
-  cursor: pointer;
-  background-color: #f0f6ff; /* 浅蓝色背景 */
-  color: #0056b3;            /* 深蓝色文字 */
-  border: 1px solid #cce5ff;
-  border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.5;
-  transition: all 0.2s ease-in-out;
-  margin-left: 6px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.bib-btn:hover {
-  background-color: #0056b3;
-  color: #ffffff;
-  border-color: #004494;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* 2. 气泡卡片容器 (Popover) */
+// =======================================================
+// 2. BibTeX Popover 气泡弹窗样式 (功能核心)
+// =======================================================
 #bibPopover {
   display: none; /* 默认隐藏 */
   position: absolute;
@@ -360,7 +71,7 @@ a:hover {
   text-align: left;
 }
 
-/* 3. 气泡的小尖角 (Triangle Arrow) */
+/* 气泡的小尖角 */
 #bibPopover::before, #bibPopover::after {
   content: "";
   position: absolute;
@@ -370,23 +81,21 @@ a:hover {
   border-style: solid;
 }
 
-/* 尖角边框颜色 (为了产生边框效果) */
 #bibPopover::before {
-  top: -11px; /* 向上偏移 */
-  left: 20px; /* 尖角水平位置 */
+  top: -11px;
+  left: 20px;
   border-width: 0 11px 11px 11px;
   border-color: transparent transparent #e1e4e8 transparent;
 }
 
-/* 尖角背景颜色 (白色覆盖在边框上) */
 #bibPopover::after {
   top: -10px;
-  left: 21px; /* 微调以匹配 */
+  left: 21px;
   border-width: 0 10px 10px 10px;
   border-color: transparent transparent #ffffff transparent;
 }
 
-/* 4. 气泡内部布局 */
+/* 气泡头部 */
 .bib-popover-header {
   display: flex;
   justify-content: space-between;
@@ -400,6 +109,7 @@ a:hover {
   color: #24292e;
 }
 
+/* 气泡内容 */
 .bib-popover-content {
   padding: 15px;
   background: #ffffff;
@@ -413,7 +123,7 @@ a:hover {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 12px;
   line-height: 1.45;
-  white-space: pre-wrap; /* 自动换行 */
+  white-space: pre-wrap;
   word-break: break-all;
   border: none;
   margin: 0;
@@ -422,7 +132,7 @@ a:hover {
   overflow-y: auto;
 }
 
-/* 复制按钮样式 */
+/* 复制按钮 */
 #copyBibBtn {
   background-color: #2ea44f;
   color: white;
@@ -438,29 +148,188 @@ a:hover {
   background-color: #2c974b;
 }
 
-/* =======================================================
-   文本排版优化：两端对齐 (Justify)
-   ======================================================= */
 
-/* 1. 针对论文列表里的描述文本 (Paper Box) */
-.paper-box-text p {
-  text-align: justify;       /* 两端对齐 */
-  text-justify: inter-word;  /* 智能调整单词间距 */
-  hyphens: auto;             /* 允许长单词自动断词，防止出现大段空白 */
-  -webkit-hyphens: auto;     /* Safari 兼容 */
-  -ms-hyphens: auto;         /* IE/Edge 兼容 */
+// =======================================================
+// 3. YLX Custom Styles: 全局样式覆盖 + 组件美化
+//    (包含：Badge美化, 黑色链接, PaperBox 布局, 文本对齐)
+// =======================================================
+
+/* --- 全局链接颜色控制 --- */
+/* 默认状态：深黑色 (让页面看起来更干净) */
+a {
+  color: #222222 !important; 
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-/* 2. 针对首页或其他页面的普通正文段落 */
+/* 鼠标悬停状态：变回标准的蓝色 */
+a:hover {
+  color: #0000EE !important;
+  text-decoration: underline;
+}
+
+/* --- 全局 Badge (小方块) 美化 --- */
+.badge {
+  display: inline-block;
+  padding: 3px 6px;       /* 精致的内边距 */
+  font-size: 11px;        /* 字体稍微改小，更显高级 */
+  font-weight: 600;       /* 半粗体 */
+  line-height: 1;         /* 紧凑行高 */
+  color: #ffffff !important;
+  background-color: #00369f; /* 保持深蓝色 */
+  border-radius: 4px;     /* 圆角：这就是你要的圆润效果 */
+  vertical-align: middle; /* 关键：让它在行内文本中垂直居中对齐 */
+  margin-right: 5px;      /* 右侧稍微留点空隙 */
+  box-shadow: none;       /* 去除默认阴影，扁平化 */
+  border: none;
+  
+  /* 防止被父元素的相对定位影响位置 */
+  position: relative; 
+  top: -1px; /* 视觉微调，让它看起来完全居中 */
+}
+
+/* --- Paper Box 组件 (最终优化版) --- */
+.paper-box {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    border-color: #e6e6e6;
+    z-index: 1;
+  }
+
+  /* Paper Box 内部的图片区域 */
+  .paper-box-image {
+    width: 100%;
+    margin-bottom: 15px; 
+    
+    & > div {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       border: none !important; 
+       border-radius: 0;
+    }
+
+    /* 这里的 Badge 继承全局样式，但需要微调一下位置 */
+    .badge {
+       margin: 0 0 8px 0 !important; /* 底部留空，把图片顶下去 */
+       padding: 4px 8px; /* 比普通列表里的稍微大一点点，因为是主图标签 */
+       font-size: 12px;
+       top: auto; /* 重置微调 */
+    }
+
+    img {
+       display: block;
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+       border-radius: 6px;
+       border: 1px solid #eee;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+  }
+
+  /* Paper Box 内部的文字区域 */
+  .paper-box-text {
+    width: 100%;
+    
+    /* 标题：因为全局链接已经是黑色了，这里只需要处理字体大小和粗细 */
+    h3, a {
+        font-weight: 700;
+        font-size: 1.1em;
+        line-height: 1.4;
+        margin-bottom: 6px;
+        display: inline; /* 防止标题独占一行导致链接点击范围过大 */
+    }
+    
+    /* 摘要段落 */
+    p {
+        margin-bottom: 8px;
+        color: #586069;
+        font-size: 0.95em;
+        line-height: 1.6;
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+    }
+  }
+
+  /* 底部按钮组 (PDF/PPT/Bib) - 必须强制覆盖全局链接颜色为蓝色/白色 */
+  .paper-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center;
+
+    a, button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      padding: 0 12px;
+      margin: 0;
+      
+      font-size: 12px;
+      font-weight: 600;
+      font-family: inherit;
+      line-height: 1;
+      
+      /* 强制指定颜色，不受全局黑色影响 */
+      color: #0366d6 !important; 
+      background-color: #f1f8ff;
+      border: 1px solid rgba(27,31,35,0.15);
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: all 0.2s ease;
+    }
+
+    a:hover, button:hover {
+      background-color: #0366d6;
+      color: #ffffff !important;
+      border-color: #0366d6;
+    }
+  }
+
+  /* 桌面端布局 */
+  @include breakpoint($medium) {
+    flex-direction: row;
+    align-items: flex-start;
+    
+    .paper-box-image {
+      flex: 0 0 240px;
+      max-width: 240px;
+      margin-bottom: 0;
+      margin-right: 24px;
+    }
+    
+    .paper-box-text {
+      flex: 1;
+    }
+  }
+}
+
+/* BibTeX 按钮占位 (样式已在 .paper-buttons 中统一处理) */
+.bib-btn {
+  /* 空 */
+}
+
+/* --- 其他文本对齐优化 --- */
 .page__content p, 
-.page__content li, 
-.archive__item-excerpt {
+.page__content li {
   text-align: justify;
   hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* 3. 修复：防止标题或短文本也被强制拉伸 */
-h1, h2, h3, h4, h5, h6, .page__title {
-  text-align: left !important; /* 标题保持左对齐更好看 */
 }
