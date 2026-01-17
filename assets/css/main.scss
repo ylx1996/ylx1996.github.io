@@ -416,4 +416,29 @@ a:hover {
   background-color: #2c974b;
 }
 
-/* 原有的 Modal 样式如果不再需要可以删除，或者保留以防万一 */
+/* =======================================================
+   文本排版优化：两端对齐 (Justify)
+   ======================================================= */
+
+/* 1. 针对论文列表里的描述文本 (Paper Box) */
+.paper-box-text p {
+  text-align: justify;       /* 两端对齐 */
+  text-justify: inter-word;  /* 智能调整单词间距 */
+  hyphens: auto;             /* 允许长单词自动断词，防止出现大段空白 */
+  -webkit-hyphens: auto;     /* Safari 兼容 */
+  -ms-hyphens: auto;         /* IE/Edge 兼容 */
+}
+
+/* 2. 针对首页或其他页面的普通正文段落 */
+.page__content p, 
+.page__content li, 
+.archive__item-excerpt {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* 3. 修复：防止标题或短文本也被强制拉伸 */
+h1, h2, h3, h4, h5, h6, .page__title {
+  text-align: left !important; /* 标题保持左对齐更好看 */
+}
