@@ -5,6 +5,31 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ICDCS 2023</div>
+      <img src='images/icdcs23.png' alt="sym">
+    </div>
+  </div>
+  <div class='paper-box-text'>
+    <a href="https://ieeexplore.ieee.org/document/10272518">Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability</a>
+    
+    <p>
+      <strong>Lingxiao Yang</strong>, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen.
+    </p>
+
+    <p>This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing. Splicer offers a comprehensive solution that tackles both ​​network scalability​​ (through optimal PCH placement) and ​​performance scalability​​ (through its novel routing protocol).</p>
+
+    <div class="paper-buttons">
+      <a href="link_to_pdf">PDF</a>
+      <a href="link_to_ppt">PPT</a>
+      <button class="bib-btn" data-bibtex="@inproceedings{yang2023optimal, author = {Yang, Lingxiao and Dong, Xuewen and Gao, Sheng and Qu, Qiang and Zhang, Xiaodong and Tian, Wensheng and Shen, Yulong}, title = {Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability}, booktitle = {2023 IEEE 43rd International Conference on Distributed Computing Systems (ICDCS)}, pages = {692--702}, year = {2023}, organization={IEEE}}">BibTeX</button>
+    </div>
+
+  </div>
+</div>
+
 [Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/document/10272518), **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen. 
 \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) 
 \| [**PPT**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/230720icdcs-slide-yang.pptx)
