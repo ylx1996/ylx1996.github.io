@@ -59,33 +59,55 @@ body, html {
     border-color: #d1d5da;
   }
 
-  /* --- 图片区域 --- */
+  /* --- 图片区域 (Badge 移至外部版) --- */
   .paper-box-image {
     width: 100%;
-    margin-bottom: 15px; /* 移动端图片和文字的间距 */
-    position: relative;
+    margin-bottom: 15px; 
     
+    /* 1. 包裹容器：改为 Flex 列布局，让 Badge 和图片垂直排列 */
     & > div {
        width: 100%;
-       position: relative;
-       overflow: hidden; /* 防止圆角溢出 */
-       border-radius: 6px;
-       border: 1px solid #eee; /* 给图片加个细边框 */
+       display: flex;           /* 开启 Flex 布局 */
+       flex-direction: column;  /* 垂直排列：上 Badge，下图片 */
+       align-items: flex-start; /* 左对齐 */
+       
+       /* 移除之前的“相框”样式，因为现在边框要加在图片上 */
+       border: none !important; 
+       border-radius: 0;
+       overflow: visible;       /* 允许内容自然显示 */
     }
 
+    /* 2. Badge 样式：改为普通文档流元素，不再绝对定位 */
+    .badge {
+       position: relative !important; /* 强制取消 absolute */
+       top: auto !important;
+       left: auto !important;
+       margin: 0 0 6px 0 !important;  /* 仅保留底部间距，把图片顶下去 */
+       
+       display: inline-block;
+       padding: 4px 8px;       /* 调整内边距，更精致 */
+       border-radius: 4px;     /* 圆角 */
+       font-size: 12px;
+       font-weight: 600;
+       line-height: 1.2;
+       box-shadow: none;       /* 扁平化，显得干净 */
+       z-index: 1;
+       
+       /* 保持原来的蓝色背景，如果原 CSS 有定义 .badge 颜色则会自动继承 */
+       /* 如果没有，可以解除下面这行的注释：*/
+       /* background-color: #00369f; color: white; */
+    }
+
+    /* 3. 图片样式：边框和圆角移动到这里 */
     img {
        display: block;
        width: 100%;
        height: auto;
        object-fit: cover;
-    }
-    
-    /* 优化 Badge 位置 */
-    .badge {
-       top: 8px;
-       left: -4px; /* 让标签稍微突出一点，更有设计感 */
-       box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-       z-index: 10;
+       
+       border-radius: 6px;     /* 图片本身带圆角 */
+       border: 1px solid #eee; /* 图片加细边框 */
+       box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 轻微阴影 */
     }
   }
 
