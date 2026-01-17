@@ -39,51 +39,76 @@ body, html {
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/* =======================================================
+   修改后的 Paper Box：卡片化 + 悬停浮起效果
+   ======================================================= */
 .paper-box {
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: flex-start; /* 左对齐 */
+  align-items: flex-start;     /* 顶部对齐，防止文字少时图片垂直居中显得奇怪 */
   flex-direction: row;
   flex-wrap: wrap;
-  border-bottom: 1px #efefef solid;
-  padding: 2em 0 2em 0;
-  
 
-  .paper-box-image{
-      justify-content: center;
+  /* 核心卡片样式 */
+  background: #ffffff;
+  padding: 24px;          /* 卡片内部留白，让内容呼吸 */
+  margin-bottom: 24px;    /* 卡片之间的间距 */
+  border-radius: 12px;    /* 圆角 */
+  border: 1px solid #f2f2f2; /* 极淡的边框，增加精致感 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02); /* 默认状态：微弱阴影 */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* 添加平滑动画曲线 */
+  
+  /* --- 悬停效果 (Hover) --- */
+  &:hover {
+    transform: translateY(-5px); /* 向上浮动 5像素 */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08); /* 投影加深、扩散 */
+    border-color: #e6e6e6;
+    z-index: 1; /* 确保浮起时层级最高 */
+  }
+
+  /* 图片区域 */
+  .paper-box-image {
       display: flex;
       width: 100%;
-      order: 2;
+      order: 2; /* 移动端：图片在下方 */
+      margin-top: 15px;
+      justify-content: center;
+
       img {
-          max-width: 400px;
-          box-shadow: 3px 3px 6px #888;
+          width: 100%;
+          max-width: 100%; /* 确保图片不溢出卡片 */
+          border-radius: 6px; /* 图片也加点圆角 */
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
           object-fit: cover;
       }
   }
   
-  .paper-box-text{
-      max-width: 100%;
-      order: 1;
+  /* 文字区域 */
+  .paper-box-text {
+      width: 100%;
+      order: 1; /* 移动端：文字在上方 */
   }
   
+  /* --- 桌面端布局 (大屏幕) --- */
   @include breakpoint($medium) {
-      .paper-box-image{
-          justify-content: left;
-          min-width: 200px;
-          max-width: 40%;
-          order: 1;
+      flex-wrap: nowrap; /* 不换行，左右并排 */
+      
+      .paper-box-image {
+          justify-content: flex-start;
+          min-width: 220px; /* 固定图片宽度 */
+          max-width: 220px;
+          margin-top: 0;
+          margin-right: 30px; /* 图片和文字的间距 */
+          order: 1; /* 桌面端：图片在左边 */
       }
       
-      .paper-box-text{
-          justify-content: left;
-          padding-left: 2em;
-          max-width: 60%;
-          order: 2;
+      .paper-box-text {
+          padding-left: 0;
+          width: auto;
+          flex: 1; /* 自动填充剩余空间 */
+          order: 2; /* 桌面端：文字在右边 */
       }
-
   }
-
-
 }
 
 $scroll_offset : 2em;
