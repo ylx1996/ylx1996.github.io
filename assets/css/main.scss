@@ -2,7 +2,7 @@
 ---
 
 // =======================================================
-// 1. 基础设置与 Imports (保持原样)
+// 1. 基础设置与 Imports
 // =======================================================
 
 // 强制全局亮模式 + 高对比
@@ -149,33 +149,35 @@ h1:before, .anchor:before {
 // =======================================================
 
 /* --- 1. 链接颜色修复 (包含导航栏、侧边栏) --- */
-/* 默认状态：深黑色 */
+
+/* 定义这些区域的链接默认颜色为黑色 */
 a, 
+.masthead a, 
+.greedy-nav a,
+.sidebar a,
 .page__content a, 
-.page__content li a,
 p a,
-.masthead a,       /* 顶部导航栏 */
-.greedy-nav a,     /* 响应式导航 */
-.sidebar a,        /* 侧边栏 */
-.author__urls a    /* 个人信息链接 */
-{
+li a {
   color: #222222 !important; 
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-/* 悬停状态：标准蓝 */
+/* 定义悬停时为蓝色 */
 a:hover, 
-.page__content a:hover, 
-.page__content li a:hover,
-p a:hover,
-.masthead a:hover,
+.masthead a:hover, 
 .greedy-nav a:hover,
 .sidebar a:hover,
-.author__urls a:hover
-{
+.page__content a:hover,
+p a:hover,
+li a:hover {
   color: #0000EE !important;
   text-decoration: underline;
+}
+
+/* 特殊修正：导航栏标题如果想保持黑色，可单独再设一次 */
+.site-title {
+  color: #222222 !important;
 }
 
 /* --- 2. 统一 Badge (小方块) 样式 --- */
@@ -290,23 +292,20 @@ p a:hover,
 }
 
 /* --- 4. 强力统一按钮样式 (PDF/PPT/Bib) --- */
-/* 解决对齐不一致问题：
-   1. 使用 !important 覆盖所有默认背景和边框
-   2. 强制 height 和 line-height 一致
-   3. 清除 button 标签的默认外观
-*/
+/* 修复按钮不一致的核心：清除 button 的默认外观 */
 .paper-buttons a, 
 .paper-buttons button, 
 .bib-btn {
-  -webkit-appearance: none; /* 关键：去除系统默认按钮外观 */
-  appearance: none;
+  -webkit-appearance: none !important; /* Safari/Chrome 去除默认按钮样式 */
+  -moz-appearance: none !important;    /* Firefox 去除默认按钮样式 */
+  appearance: none !important;
   
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
   
-  height: 28px !important;       /* 强制统一高度 */
-  line-height: 26px !important;  /* 强制统一行高 (28px - 2px border) */
+  height: 28px !important;       
+  line-height: 1 !important;     /* 防止继承其他行高 */
   padding: 0 12px !important;
   margin: 0 !important;
   
@@ -317,7 +316,8 @@ p a:hover,
   
   /* 统一颜色：淡蓝底+深蓝字 */
   color: #0366d6 !important; 
-  background-color: #f1f8ff !important; /* 确保 Bib 按钮也是这个背景 */
+  background-color: #f1f8ff !important; /* 强制背景色，覆盖 button 默认的灰色 */
+  background-image: none !important;    /* 防止有渐变背景 */
   border: 1px solid rgba(27,31,35,0.15) !important;
   border-radius: 4px !important;
   text-decoration: none !important;
@@ -342,7 +342,7 @@ p a:hover,
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 12px;
-    align-items: center; /* 垂直居中对齐 */
+    align-items: center; 
 }
 
 /* --- 5. 其他文本对齐优化 --- */
