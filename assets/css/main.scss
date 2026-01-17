@@ -148,28 +148,37 @@ h1:before, .anchor:before {
 // 3. YLX Custom Styles: 全局样式覆盖 + 组件美化
 // =======================================================
 
-/* --- 1. 链接颜色修复 (增强优先级) --- */
-/* 默认：深黑色 */
+/* --- 1. 链接颜色修复 (包含导航栏、侧边栏) --- */
+/* 默认状态：深黑色 */
 a, 
 .page__content a, 
 .page__content li a,
-p a {
+p a,
+.masthead a,       /* 顶部导航栏 */
+.greedy-nav a,     /* 响应式导航 */
+.sidebar a,        /* 侧边栏 */
+.author__urls a    /* 个人信息链接 */
+{
   color: #222222 !important; 
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-/* 悬停：标准蓝 */
+/* 悬停状态：标准蓝 */
 a:hover, 
 .page__content a:hover, 
 .page__content li a:hover,
-p a:hover {
+p a:hover,
+.masthead a:hover,
+.greedy-nav a:hover,
+.sidebar a:hover,
+.author__urls a:hover
+{
   color: #0000EE !important;
   text-decoration: underline;
 }
 
 /* --- 2. 统一 Badge (小方块) 样式 --- */
-/* 同时作用于 .badge 类 和 列表里的 code 标签 (比如 `manuscript 2025`) */
 .badge, 
 .page__content li > code,
 .page__content p > code {
@@ -177,11 +186,11 @@ p a:hover {
   padding: 3px 6px;       
   font-size: 11px;        
   font-weight: 600;       
-  font-family: system-ui, -apple-system, sans-serif; /* 统一字体 */
+  font-family: system-ui, -apple-system, sans-serif;
   line-height: 1;         
   color: #ffffff !important;
-  background-color: #00369f !important; /* 强制深蓝背景 */
-  border-radius: 4px !important;     /* 强制圆角 */
+  background-color: #00369f !important;
+  border-radius: 4px !important;
   vertical-align: middle; 
   margin-right: 5px;     
   box-shadow: none;       
@@ -190,7 +199,7 @@ p a:hover {
   top: -1px;
 }
 
-/* 修正：如果是 Paper Box 里的图片上方的 Badge，位置需要特殊处理 */
+/* 修正：Paper Box 图片上方的 Badge */
 .paper-box .paper-box-image .badge {
     margin: 0 0 8px 0 !important;
     padding: 4px 8px; 
@@ -217,7 +226,6 @@ p a:hover {
     z-index: 1;
   }
 
-  /* 图片区域 */
   .paper-box-image {
     width: 100%;
     margin-bottom: 15px; 
@@ -242,21 +250,17 @@ p a:hover {
     }
   }
 
-  /* 文字区域 */
   .paper-box-text {
     width: 100%;
     
-    /* 标题 (链接) */
     h3, a {
         font-weight: 700;
         font-size: 1.1em;
         line-height: 1.4;
         margin-bottom: 6px;
         display: inline;
-        /* 颜色已由全局样式控制 (黑->蓝) */
     }
     
-    /* 摘要段落 */
     p {
         margin-bottom: 8px;
         color: #586069;
@@ -268,7 +272,6 @@ p a:hover {
     }
   }
 
-  /* 桌面端布局 */
   @include breakpoint($medium) {
     flex-direction: row;
     align-items: flex-start;
@@ -286,36 +289,40 @@ p a:hover {
   }
 }
 
-/* --- 4. 统一按钮样式 (Paper Box 按钮 + 普通 Bib 按钮) --- */
-/* 这里同时选中了：
-   1. .paper-buttons a (PDF/PPT)
-   2. .paper-buttons button (Paper Box里的Bib)
-   3. .bib-btn (普通列表里的Bib)
+/* --- 4. 强力统一按钮样式 (PDF/PPT/Bib) --- */
+/* 解决对齐不一致问题：
+   1. 使用 !important 覆盖所有默认背景和边框
+   2. 强制 height 和 line-height 一致
+   3. 清除 button 标签的默认外观
 */
 .paper-buttons a, 
 .paper-buttons button, 
 .bib-btn {
-  display: inline-flex !important; /* 强制 flex 布局确保文字居中 */
+  -webkit-appearance: none; /* 关键：去除系统默认按钮外观 */
+  appearance: none;
+  
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  height: 28px;
-  padding: 0 12px;
-  margin: 0;
   
-  font-size: 12px;
-  font-weight: 600;
-  font-family: inherit;
-  line-height: 1;
-  vertical-align: middle; /* 对齐行内文本 */
+  height: 28px !important;       /* 强制统一高度 */
+  line-height: 26px !important;  /* 强制统一行高 (28px - 2px border) */
+  padding: 0 12px !important;
+  margin: 0 !important;
   
-  /* 强制指定颜色为蓝色，不受全局黑色链接影响 */
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  vertical-align: middle !important;
+  
+  /* 统一颜色：淡蓝底+深蓝字 */
   color: #0366d6 !important; 
-  background-color: #f1f8ff !important;
+  background-color: #f1f8ff !important; /* 确保 Bib 按钮也是这个背景 */
   border: 1px solid rgba(27,31,35,0.15) !important;
   border-radius: 4px !important;
   text-decoration: none !important;
   cursor: pointer;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   transition: all 0.2s ease;
 }
 
@@ -327,6 +334,15 @@ p a:hover {
   color: #ffffff !important;
   border-color: #0366d6 !important;
   text-decoration: none !important;
+}
+
+/* 按钮组容器布局 */
+.paper-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center; /* 垂直居中对齐 */
 }
 
 /* --- 5. 其他文本对齐优化 --- */
