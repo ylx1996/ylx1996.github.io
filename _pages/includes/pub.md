@@ -2,9 +2,6 @@
 # 📝 Publications 
 ## 🚀 Blockchain Performance Optimization
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
@@ -29,6 +26,9 @@
 
   </div>
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDCS 2023</div><img src='images/icdcs23.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
 [Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability](https://ieeexplore.ieee.org/document/10272518), **Lingxiao Yang**, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen. 
 \| [**PDF**](https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf) 
