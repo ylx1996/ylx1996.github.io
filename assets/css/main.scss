@@ -148,6 +148,15 @@ h1:before, .anchor:before {
 // 3. YLX Custom Styles: 全局样式覆盖 + 组件美化
 // =======================================================
 
+/* --- 0. 导航栏背景修复 (新增：解决导航栏变黑问题) --- */
+.masthead {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #eeeeee; /* 加条淡灰线区分内容 */
+}
+.greedy-nav {
+  background-color: #ffffff !important;
+}
+
 /* --- 1. 链接颜色修复 (包含导航栏、侧边栏) --- */
 
 /* 定义这些区域的链接默认颜色为黑色 */
@@ -175,7 +184,7 @@ li a:hover {
   text-decoration: underline;
 }
 
-/* 特殊修正：导航栏标题如果想保持黑色，可单独再设一次 */
+/* 特殊修正：导航栏标题 */
 .site-title {
   color: #222222 !important;
 }
@@ -292,12 +301,11 @@ li a:hover {
 }
 
 /* --- 4. 强力统一按钮样式 (PDF/PPT/Bib) --- */
-/* 修复按钮不一致的核心：清除 button 的默认外观 */
 .paper-buttons a, 
 .paper-buttons button, 
 .bib-btn {
-  -webkit-appearance: none !important; /* Safari/Chrome 去除默认按钮样式 */
-  -moz-appearance: none !important;    /* Firefox 去除默认按钮样式 */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
   appearance: none !important;
   
   display: inline-flex !important;
@@ -305,7 +313,7 @@ li a:hover {
   justify-content: center;
   
   height: 28px !important;       
-  line-height: 1 !important;     /* 防止继承其他行高 */
+  line-height: 1 !important;
   padding: 0 12px !important;
   margin: 0 !important;
   
@@ -316,8 +324,8 @@ li a:hover {
   
   /* 统一颜色：淡蓝底+深蓝字 */
   color: #0366d6 !important; 
-  background-color: #f1f8ff !important; /* 强制背景色，覆盖 button 默认的灰色 */
-  background-image: none !important;    /* 防止有渐变背景 */
+  background-color: #f1f8ff !important;
+  background-image: none !important;
   border: 1px solid rgba(27,31,35,0.15) !important;
   border-radius: 4px !important;
   text-decoration: none !important;
@@ -336,7 +344,6 @@ li a:hover {
   text-decoration: none !important;
 }
 
-/* 按钮组容器布局 */
 .paper-buttons {
     display: flex;
     flex-wrap: wrap;
