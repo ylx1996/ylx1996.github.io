@@ -43,7 +43,7 @@ body, html {
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-// 锚点定位偏移 (防止被顶部导航栏遮挡)
+// 锚点定位偏移
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
   content: ''; 
@@ -55,14 +55,14 @@ h1:before, .anchor:before {
 }
 
 // =======================================================
-// 2. BibTeX Popover 气泡弹窗样式 (功能核心)
+// 2. BibTeX Popover 气泡弹窗样式
 // =======================================================
 #bibPopover {
-  display: none; /* 默认隐藏 */
+  display: none; 
   position: absolute;
   z-index: 9999;
   width: 500px;
-  max-width: 90vw; /* 移动端适配 */
+  max-width: 90vw;
   background: #ffffff;
   border: 1px solid #e1e4e8;
   border-radius: 8px;
@@ -71,7 +71,6 @@ h1:before, .anchor:before {
   text-align: left;
 }
 
-/* 气泡的小尖角 */
 #bibPopover::before, #bibPopover::after {
   content: "";
   position: absolute;
@@ -95,7 +94,6 @@ h1:before, .anchor:before {
   border-color: transparent transparent #ffffff transparent;
 }
 
-/* 气泡头部 */
 .bib-popover-header {
   display: flex;
   justify-content: space-between;
@@ -109,7 +107,6 @@ h1:before, .anchor:before {
   color: #24292e;
 }
 
-/* 气泡内容 */
 .bib-popover-content {
   padding: 15px;
   background: #ffffff;
@@ -132,7 +129,6 @@ h1:before, .anchor:before {
   overflow-y: auto;
 }
 
-/* 复制按钮 */
 #copyBibBtn {
   background-color: #2ea44f;
   color: white;
@@ -148,47 +144,61 @@ h1:before, .anchor:before {
   background-color: #2c974b;
 }
 
-
 // =======================================================
 // 3. YLX Custom Styles: 全局样式覆盖 + 组件美化
-//    (包含：Badge美化, 黑色链接, PaperBox 布局, 文本对齐)
 // =======================================================
 
-/* --- 全局链接颜色控制 --- */
-/* 默认状态：深黑色 (让页面看起来更干净) */
-a {
+/* --- 1. 链接颜色修复 (增强优先级) --- */
+/* 默认：深黑色 */
+a, 
+.page__content a, 
+.page__content li a,
+p a {
   color: #222222 !important; 
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-/* 鼠标悬停状态：变回标准的蓝色 */
-a:hover {
+/* 悬停：标准蓝 */
+a:hover, 
+.page__content a:hover, 
+.page__content li a:hover,
+p a:hover {
   color: #0000EE !important;
   text-decoration: underline;
 }
 
-/* --- 全局 Badge (小方块) 美化 --- */
-.badge {
+/* --- 2. 统一 Badge (小方块) 样式 --- */
+/* 同时作用于 .badge 类 和 列表里的 code 标签 (比如 `manuscript 2025`) */
+.badge, 
+.page__content li > code,
+.page__content p > code {
   display: inline-block;
-  padding: 3px 6px;       /* 精致的内边距 */
-  font-size: 11px;        /* 字体稍微改小，更显高级 */
-  font-weight: 600;       /* 半粗体 */
-  line-height: 1;         /* 紧凑行高 */
+  padding: 3px 6px;       
+  font-size: 11px;        
+  font-weight: 600;       
+  font-family: system-ui, -apple-system, sans-serif; /* 统一字体 */
+  line-height: 1;         
   color: #ffffff !important;
-  background-color: #00369f; /* 保持深蓝色 */
-  border-radius: 4px;     /* 圆角：这就是你要的圆润效果 */
-  vertical-align: middle; /* 关键：让它在行内文本中垂直居中对齐 */
-  margin-right: 5px;      /* 右侧稍微留点空隙 */
-  box-shadow: none;       /* 去除默认阴影，扁平化 */
+  background-color: #00369f !important; /* 强制深蓝背景 */
+  border-radius: 4px !important;     /* 强制圆角 */
+  vertical-align: middle; 
+  margin-right: 5px;     
+  box-shadow: none;       
   border: none;
-  
-  /* 防止被父元素的相对定位影响位置 */
   position: relative; 
-  top: -1px; /* 视觉微调，让它看起来完全居中 */
+  top: -1px;
 }
 
-/* --- Paper Box 组件 (最终优化版) --- */
+/* 修正：如果是 Paper Box 里的图片上方的 Badge，位置需要特殊处理 */
+.paper-box .paper-box-image .badge {
+    margin: 0 0 8px 0 !important;
+    padding: 4px 8px; 
+    top: auto; 
+    font-size: 12px;
+}
+
+/* --- 3. Paper Box 组件 --- */
 .paper-box {
   display: flex;
   flex-direction: column;
@@ -207,7 +217,7 @@ a:hover {
     z-index: 1;
   }
 
-  /* Paper Box 内部的图片区域 */
+  /* 图片区域 */
   .paper-box-image {
     width: 100%;
     margin-bottom: 15px; 
@@ -221,14 +231,6 @@ a:hover {
        border-radius: 0;
     }
 
-    /* 这里的 Badge 继承全局样式，但需要微调一下位置 */
-    .badge {
-       margin: 0 0 8px 0 !important; /* 底部留空，把图片顶下去 */
-       padding: 4px 8px; /* 比普通列表里的稍微大一点点，因为是主图标签 */
-       font-size: 12px;
-       top: auto; /* 重置微调 */
-    }
-
     img {
        display: block;
        width: 100%;
@@ -240,17 +242,18 @@ a:hover {
     }
   }
 
-  /* Paper Box 内部的文字区域 */
+  /* 文字区域 */
   .paper-box-text {
     width: 100%;
     
-    /* 标题：因为全局链接已经是黑色了，这里只需要处理字体大小和粗细 */
+    /* 标题 (链接) */
     h3, a {
         font-weight: 700;
         font-size: 1.1em;
         line-height: 1.4;
         margin-bottom: 6px;
-        display: inline; /* 防止标题独占一行导致链接点击范围过大 */
+        display: inline;
+        /* 颜色已由全局样式控制 (黑->蓝) */
     }
     
     /* 摘要段落 */
@@ -262,45 +265,6 @@ a:hover {
         text-align: justify;
         text-justify: inter-word;
         hyphens: auto;
-    }
-  }
-
-  /* 底部按钮组 (PDF/PPT/Bib) - 必须强制覆盖全局链接颜色为蓝色/白色 */
-  .paper-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 12px;
-    align-items: center;
-
-    a, button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 28px;
-      padding: 0 12px;
-      margin: 0;
-      
-      font-size: 12px;
-      font-weight: 600;
-      font-family: inherit;
-      line-height: 1;
-      
-      /* 强制指定颜色，不受全局黑色影响 */
-      color: #0366d6 !important; 
-      background-color: #f1f8ff;
-      border: 1px solid rgba(27,31,35,0.15);
-      border-radius: 4px;
-      text-decoration: none;
-      cursor: pointer;
-      box-sizing: border-box;
-      transition: all 0.2s ease;
-    }
-
-    a:hover, button:hover {
-      background-color: #0366d6;
-      color: #ffffff !important;
-      border-color: #0366d6;
     }
   }
 
@@ -322,12 +286,50 @@ a:hover {
   }
 }
 
-/* BibTeX 按钮占位 (样式已在 .paper-buttons 中统一处理) */
+/* --- 4. 统一按钮样式 (Paper Box 按钮 + 普通 Bib 按钮) --- */
+/* 这里同时选中了：
+   1. .paper-buttons a (PDF/PPT)
+   2. .paper-buttons button (Paper Box里的Bib)
+   3. .bib-btn (普通列表里的Bib)
+*/
+.paper-buttons a, 
+.paper-buttons button, 
 .bib-btn {
-  /* 空 */
+  display: inline-flex !important; /* 强制 flex 布局确保文字居中 */
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 12px;
+  margin: 0;
+  
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 1;
+  vertical-align: middle; /* 对齐行内文本 */
+  
+  /* 强制指定颜色为蓝色，不受全局黑色链接影响 */
+  color: #0366d6 !important; 
+  background-color: #f1f8ff !important;
+  border: 1px solid rgba(27,31,35,0.15) !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 
-/* --- 其他文本对齐优化 --- */
+/* 悬停状态 */
+.paper-buttons a:hover, 
+.paper-buttons button:hover,
+.bib-btn:hover {
+  background-color: #0366d6 !important;
+  color: #ffffff !important;
+  border-color: #0366d6 !important;
+  text-decoration: none !important;
+}
+
+/* --- 5. 其他文本对齐优化 --- */
 .page__content p, 
 .page__content li {
   text-align: justify;
