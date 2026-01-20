@@ -18,12 +18,21 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       // 1. 定义轮播图片数组 (包含所有你想展示的照片)
-      // 建议顺序：[默认图, 微笑图, 酷酷图...]
       // 请确保所有图片都能访问
       const hiddenImages = [
-        "{{ '/images/lx_profile.jpg' | relative_url }}",       // 图1
-        "{{ '/images/lx_profile_smile.jpg' | relative_url }}", // 图2
-        "{{ '/images/lx_profile_cool.jpg' | relative_url }}"   // 图3
+        "{{ '/images/lx_profile.jpg' | relative_url }}",              // 图1
+        "{{ '/images/lx_profile_smile.jpg' | relative_url }}",        // 图2
+        "{{ '/images/lx_profile_cool.jpg' | relative_url }}",         // 图3
+        "{{ '/images/lx_profile_hainan.jpg' | relative_url }}",       // 图4
+        "{{ '/images/lx_profile_white_cliff.jpg' | relative_url }}",  // 图5
+        "{{ '/images/lx_profile_zhuhai.jpg' | relative_url }}",       // 图6
+        "{{ '/images/lx_profile_yunnan1.jpg' | relative_url }}",      // 图7
+        "{{ '/images/lx_profile_yunnan2.jpg' | relative_url }}",      // 图8
+        "{{ '/images/lx_profile_yunnan3.jpg' | relative_url }}",      // 图9
+        "{{ '/images/lx_profile_yunnan4.jpg' | relative_url }}",      // 图10
+        "{{ '/images/lx_profile_yunnan_xy1.jpg' | relative_url }}",   // 图11
+        "{{ '/images/lx_profile_yunnan_xy2.jpg' | relative_url }}",   // 图12
+        "{{ '/images/lx_profile_yunnan_xy3.jpg' | relative_url }}"    // 图13
       ];
       
       const frontImg = document.getElementById('profile-front-img');

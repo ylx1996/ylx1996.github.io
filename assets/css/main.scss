@@ -438,17 +438,69 @@ li a:hover {
   background: transparent !important;
 }
 
-/* 手机端布局优化：让侧边栏信息垂直排列，不再拥挤 */
+/* =======================================================
+   Mobile Layout Fix (手机端布局强制垂直居中)
+   ======================================================= */
+
+/* 针对手机和平板竖屏 (宽度小于 768px) */
 @media screen and (max-width: 768px) {
+  
+  /* 1. 侧边栏容器：强制占满宽度，取消浮动 */
   .sidebar {
-    /* 强制去掉侧边栏的 Flex 布局，改为默认的垂直堆叠 */
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 20px !important;
+    padding: 0 10px !important; /* 左右留点缝隙 */
+  }
+
+  /* 2. 个人信息盒子：强制改为“垂直”排列 (Column) */
+  /* 这就是解决“挤在右边”的核心代码 */
+  .profile_box {
+    display: flex !important;
+    flex-direction: column !important; /* 上下排列 */
+    align-items: center !important;    /* 水平居中 */
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  /* 3. 头像容器：确保居中，并给底部加点距离 */
+  .flip-container {
+    margin: 0 auto 15px auto !important; /* 上右下左 */
+    /* 再次确保不会被挤压 */
+    min-width: 150px !important;
+    width: 150px !important;
+  }
+
+  /* 4. 文字区域 (名字/简介)：去掉左侧边距，强制居中 */
+  .author__content {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* 5. 名字显示优化 */
+  .author__name {
+    margin-bottom: 10px !important;
+  }
+
+  /* 6. 社交链接/详细信息：强制居中 */
+  .author__urls-wrapper {
+    width: 100% !important;
+    text-align: center !important;
     display: block !important;
-    text-align: center; /* 让内容居中 */
   }
   
-  .author__content {
-    /* 给名字和简介加点上边距 */
-    margin-top: 15px !important;
+  /* 列表项内容居中 */
+  .author__urls.social-icons {
+    display: inline-block !important; 
+    text-align: center !important;
     width: 100% !important;
+  }
+  
+  .author__urls li {
+    text-align: center !important; /* 让Email/Scholar等文字也居中 */
+    white-space: normal !important; /* 允许长文字换行，防止撑破屏幕 */
   }
 }
