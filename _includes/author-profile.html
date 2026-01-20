@@ -28,19 +28,40 @@
         "{{ '/images/lx_profile_cool.jpg' | relative_url }}"
       ];
       
-      const flipper = document.getElementById('profile-flip');
+      const frontImg = document.getElementById('profile-front-img');
       const backImg = document.getElementById('profile-back-img');
-      let currentIndex = 0;
+      const flipper = document.getElementById('profile-flip');
       
-      if(hiddenImages.length > 0) {
-          backImg.src = hiddenImages[0];
+      // 当前显示的图片索引 (初始为0，即默认图)
+      let currentIndex = 0; 
+
+      // 初始化：
+      // 正面已经是 hiddenImages[0] (假设 author.avatar 也是这张)
+      // 我们需要把背面预设为下一张 hiddenImages[1]
+      if(hiddenImages.length > 1) {
+          backImg.src = hiddenImages[1];
       }
 
+      // 监听鼠标离开事件
       flipper.addEventListener('mouseleave', function() {
+        
+        // 核心逻辑：
+        // 当鼠标离开时，CSS 会自动旋转回 0度 (显示正面)。
+        // 为了让用户感觉“停留”在了刚才的背面图上，我们要在离开的一瞬间，
+        // 把“正面图”替换成刚才显示的“背面图”。
+        
+        // 1. 指针前移，指向刚才展示的那张图
+        currentIndex = (currentIndex + 1) % hiddenImages.length;
+        
+        // 2. 瞬间把正面换成这张图
+        // (此时卡片正在从背面翻转回正面，正面变成了背面刚才的样子，视觉上就是“图没变，但翻回来了”)
+        frontImg.src = hiddenImages[currentIndex];
+
+        // 3. 等翻转动画结束 (600ms) 后，悄悄把背面换成如下一张图，为下一次翻转做准备
         setTimeout(function() {
-          currentIndex = (currentIndex + 1) % hiddenImages.length;
-          backImg.src = hiddenImages[currentIndex];
-        }, 600); 
+          const nextIndex = (currentIndex + 1) % hiddenImages.length;
+          backImg.src = hiddenImages[nextIndex];
+        }, 600);
       });
     });
   </script>
