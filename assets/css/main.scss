@@ -551,126 +551,74 @@ li a:hover {
 
 
 /* =======================================================
-   4. Mobile Layout Beautification (移动端精致美化)
+   4. Mobile Layout Optimization (移动端深度定制)
    ======================================================= */
+
+/* 定义一个仅在手机端显示的类 (用于底部的地图) */
+.mobile-only-map {
+  display: none; /* 电脑端默认隐藏 */
+}
 
 @media screen and (max-width: 768px) {
   
-  /* 1. 侧边栏整体布局 */
+  /* --- 1. 隐藏多余信息 (红框区域) --- */
+  
+  /* 隐藏简介文字 (Focusing on...) */
+  .author__bio {
+    display: none !important;
+  }
+
+  /* 隐藏所有社交链接/地址/Email (红框里的核心内容) */
+  .author__urls-wrapper {
+    display: none !important;
+  }
+
+  /* 隐藏侧边栏里的那个地图 (防止它出现在头像下面) */
+  .sidebar .sidebar-map-container {
+    display: none !important;
+  }
+
+  /* --- 2. 开启底部地图显示 --- */
+  .mobile-only-map {
+    display: block !important; /* 手机端显示 */
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  /* --- 3. 布局微调 (保留头像和名字居中) --- */
   .sidebar {
     width: 100% !important;
     float: none !important;
-    margin-bottom: 30px !important;
-    padding: 0 15px !important;
-    background: transparent !important;
+    margin-bottom: 10px !important; /* 减小底部间距，因为下面没内容了 */
+    padding: 0 !important;
   }
 
-  /* 2. 个人信息卡片化 */
   .profile_box {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    background: #fff; /* 可以在手机上给整个卡片加个白底 */
-    padding: 20px 0 !important;
+    background: transparent !important;
+    padding-top: 10px !important;
   }
 
-  /* 3. 头像优化 */
+  /* 头像保持圆形且居中 */
   .flip-container {
-    margin: 0 auto 15px auto !important;
-    min-width: 140px !important; /* 手机上稍微改小一点点更精致 */
+    margin: 0 auto 10px auto !important;
+    min-width: 140px !important;
     width: 140px !important;
     height: 140px !important;
   }
 
-  /* 4. 名字和简介 */
+  /* 名字样式 */
   .author__content {
     width: 100% !important;
     text-align: center !important;
-    margin-bottom: 20px !important;
-    padding: 0 10px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .author__name {
-    font-size: 1.4em !important;
-    margin-bottom: 8px !important;
-  }
-
-  /* 简介文字美化：增加行高，颜色变柔和 */
-  .author__bio {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-    color: #666 !important;
-    margin-top: 10px !important;
-    padding: 0 15px !important; /* 防止文字贴边 */
-  }
-
-  /* 5. 社交链接列表美化 (重点) */
-  .author__urls-wrapper {
-    width: 100% !important;
-    padding: 0 10px !important;
-  }
-  
-  .author__urls.social-icons {
-    display: flex !important;
-    flex-direction: column !important; /* 垂直排列 */
-    align-items: center !important;    /* 居中对齐 */
-    gap: 8px !important;               /* 每一行之间的间距 */
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
-  /* 将每个链接变成一个“长条胶囊”或整齐的行 */
-  .author__urls li {
-    display: block !important;
-    width: 100% !important;
-    max-width: 300px !important; /* 限制最大宽度，防止太宽难看 */
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-  }
-
-  /* 链接本身样式：增加点击区域，像个按钮 */
-  .author__urls li a,
-  .author__urls li i,
-  .author__urls li {
-    font-size: 15px !important;
-    color: #444 !important;
-    text-decoration: none !important;
-    
-    /* 弹性布局让图标和文字垂直居中 */
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  
-  /* 给链接加个淡背景，看起来更像可点击区域 (可选，不需要可删) */
-  .author__urls li a {
-    padding: 8px 15px !important;
-    background-color: #f8f9fa;
-    border-radius: 20px;
-    border: 1px solid #eee;
-    width: 100%;
-    transition: background 0.2s;
-  }
-
-  .author__urls li a:active {
-    background-color: #e2e6ea; /* 点击反馈 */
-  }
-
-  /* 图标和文字的间距 */
-  .author__urls li i {
-    margin-right: 8px !important;
-    color: #555 !important;
-    width: 20px !important; /* 固定图标宽度，保证文字对齐 */
-    text-align: center !important;
-  }
-  
-  /* 单独处理 Location 这种非链接的文本 */
-  .author__urls li:not(:has(a)) {
-     padding: 5px 0 !important;
-     background: transparent !important;
-     border: none !important;
-     color: #666 !important;
-     font-size: 14px !important;
+    font-size: 1.5em !important;
+    margin-bottom: 5px !important;
   }
 }
