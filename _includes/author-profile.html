@@ -23,26 +23,24 @@
     document.addEventListener("DOMContentLoaded", function() {
       // 修改点 2: 使用 Liquid 生成正确的图片路径数组
       const hiddenImages = [
-        "{{ '/images/lx_profile.jpg' | relative_url }}",       
-        "{{ '/images/lx_profile_smile.jpg' | relative_url }}", 
-        "{{ '/images/lx_profile_cool.jpg' | relative_url }}"   
+        "{{ '/images/lx_profile.jpg' | relative_url }}",
+        "{{ '/images/lx_profile_smile.jpg' | relative_url }}",
+        "{{ '/images/lx_profile_cool.jpg' | relative_url }}"
       ];
       
       const flipper = document.getElementById('profile-flip');
       const backImg = document.getElementById('profile-back-img');
       let currentIndex = 0;
       
-      // 初始化：确保JS加载时背面有图
       if(hiddenImages.length > 0) {
           backImg.src = hiddenImages[0];
       }
 
-      // 当鼠标离开时，等待翻转动画结束后切换下一张图
       flipper.addEventListener('mouseleave', function() {
         setTimeout(function() {
           currentIndex = (currentIndex + 1) % hiddenImages.length;
           backImg.src = hiddenImages[currentIndex];
-        }, 600); // 600ms 与 CSS transition 时间一致
+        }, 600); 
       });
     });
   </script>
