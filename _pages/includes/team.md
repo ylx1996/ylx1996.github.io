@@ -16,13 +16,4 @@ Dr. Yang, along with undergraduate students from SNNU, has established the "Acad
 - [20251024-从入门到精通：学术论文的阅读、思考与呈现](https://github.com/ylx1996/ylx1996.github.io/blob/main/_meetings/20251024.pdf)
 
 
-<div class="mobile-only-map">
-  <div class="sidebar-map-container">
-      <div class="map-header">
-        <i class="fas fa-globe-asia"></i> Visitors
-      </div>
-      <div class="map-content">
-          <script type="text/javascript" id="mapmyvisitors-mobile" src="//mapmyvisitors.com/map.js?d=UIXdfCDpE2BslvQkr7zH76iTmMcbbtt2ybwgWHB04Dk&cl=ffffff&w=a"></script>
-      </div>
-  </div>
-</div>
+<div id="mobile-map-placeholder"></div>
