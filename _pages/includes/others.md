@@ -1,4 +1,4 @@
-# 🧑‍🎓 Educations
+# 🧑‍🎓 Education
 - *2021.03 - 2025.06*, Ph.D., Xidian University, Xi'an.
 - *2018.09 - 2021.03*, Master, Xidian University, Xi'an.
 - *2014.08 - 2018.06*, Bachelor, Xidian University, Xi'an.
