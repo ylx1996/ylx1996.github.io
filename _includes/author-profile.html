@@ -11,54 +11,47 @@
   <div class="author__avatar flip-container" id="profile-flip">
     <div class="flipper">
       <div class="front">
-        <img src="{{ author.avatar }}" alt="{{ author.name }}" class="author__avatar_img">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="author__avatar_img">
       </div>
       <div class="back">
-        <img id="profile-back-img" src="images/lx_profile.jpg" alt="Profile Cycle" class="author__avatar_img">
+        <img id="profile-back-img" src="{{ '/images/lx_profile.jpg' | relative_url }}" alt="Profile Cycle" class="author__avatar_img">
       </div>
     </div>
   </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // 1. 在这里定义你要轮播的所有照片路径（除了默认的第一张）
-      // 请确保这些文件已经上传到了你的 images 文件夹
+      // 修改点 2: 使用 Liquid 生成正确的图片路径数组
       const hiddenImages = [
-        "images/lx_profile.jpg",       // 如果你想让默认图也参与循环，可以加上，或者换成其他图
-        "images/lx_profile_smile.jpg",     // 第二张
-        "images/lx_profile_cool.jpg"      // 第三张
-        // 你可以继续添加更多...
+        "{{ '/images/lx_profile.jpg' | relative_url }}",       
+        "{{ '/images/lx_profile_smile.jpg' | relative_url }}", 
+        "{{ '/images/lx_profile_cool.jpg' | relative_url }}"   
       ];
       
       const flipper = document.getElementById('profile-flip');
       const backImg = document.getElementById('profile-back-img');
       let currentIndex = 0;
       
-      // 初始化：设置第一张“反面”照片
+      // 初始化：确保JS加载时背面有图
       if(hiddenImages.length > 0) {
           backImg.src = hiddenImages[0];
       }
 
-      // 当鼠标离开时
+      // 当鼠标离开时，等待翻转动画结束后切换下一张图
       flipper.addEventListener('mouseleave', function() {
-        // 等待 0.6秒（即动画翻转回去的时间）之后，再悄悄切换“反面”的图片
-        // 这样下次翻转过来时，看到的就是新图片了
         setTimeout(function() {
           currentIndex = (currentIndex + 1) % hiddenImages.length;
           backImg.src = hiddenImages[currentIndex];
-        }, 600); 
+        }, 600); // 600ms 与 CSS transition 时间一致
       });
     });
   </script>
 
   <div class="author__content">
-    <!-- <h3 class="author__name">
-        {{ author.name | split: ' (' | first }}<br>
-        {{ author.name | split: ' (' | last | remove: ')' }}
-    </h3> -->
     <h3 class="author__name" style="text-align: center; line-height: 1.5; font-size: 1.2em; margin: 0 auto; padding: 10px 0;">
         <span style="display: block; font-family: 'Arial', sans-serif; font-weight: 700; color: #333;">
             {{ author.name | split: ' (' | first }}
+        </span>
         <span style="display: block; font-family: 'Noto Sans SC', sans-serif; font-weight: 400; color: #555; font-size: 1.0em;">
             {{ author.name | split: ' (' | last | remove: ')' }}
         </span>
