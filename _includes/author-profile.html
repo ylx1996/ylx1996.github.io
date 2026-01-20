@@ -3,15 +3,11 @@
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
-  <!-- 
-  <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
-  </div>
-  -->
+
   <div class="author__avatar flip-container" id="profile-flip">
     <div class="flipper">
       <div class="front">
-        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="author__avatar_img">
+        <img id="profile-front-img" src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="author__avatar_img">
       </div>
       <div class="back">
         <img id="profile-back-img" src="{{ '/images/lx_profile.jpg' | relative_url }}" alt="Profile Cycle" class="author__avatar_img">
@@ -21,23 +17,25 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // 修改点 2: 使用 Liquid 生成正确的图片路径数组
+      // 1. 定义轮播图片数组 (包含所有你想展示的照片)
+      // 建议顺序：[默认图, 微笑图, 酷酷图...]
+      // 请确保所有图片都能访问
       const hiddenImages = [
-        "{{ '/images/lx_profile.jpg' | relative_url }}",
-        "{{ '/images/lx_profile_smile.jpg' | relative_url }}",
-        "{{ '/images/lx_profile_cool.jpg' | relative_url }}"
+        "{{ '/images/lx_profile.jpg' | relative_url }}",       // 图1
+        "{{ '/images/lx_profile_smile.jpg' | relative_url }}", // 图2
+        "{{ '/images/lx_profile_cool.jpg' | relative_url }}"   // 图3
       ];
       
       const frontImg = document.getElementById('profile-front-img');
       const backImg = document.getElementById('profile-back-img');
       const flipper = document.getElementById('profile-flip');
       
-      // 当前显示的图片索引 (初始为0，即默认图)
+      // 当前正面显示的图片索引 (初始为0，即默认图)
       let currentIndex = 0; 
 
       // 初始化：
-      // 正面已经是 hiddenImages[0] (假设 author.avatar 也是这张)
-      // 我们需要把背面预设为下一张 hiddenImages[1]
+      // 正面已经是 hiddenImages[0]
+      // 我们需要把背面预设为下一张 hiddenImages[1]，这样第一次翻转就能看到图2
       if(hiddenImages.length > 1) {
           backImg.src = hiddenImages[1];
       }
@@ -46,18 +44,17 @@
       flipper.addEventListener('mouseleave', function() {
         
         // 核心逻辑：
-        // 当鼠标离开时，CSS 会自动旋转回 0度 (显示正面)。
-        // 为了让用户感觉“停留”在了刚才的背面图上，我们要在离开的一瞬间，
-        // 把“正面图”替换成刚才显示的“背面图”。
+        // 此时用户看到的是背面(Back)。鼠标离开，CSS开始把卡片翻转回正面(Front)。
         
-        // 1. 指针前移，指向刚才展示的那张图
-        currentIndex = (currentIndex + 1) % hiddenImages.length;
-        
-        // 2. 瞬间把正面换成这张图
-        // (此时卡片正在从背面翻转回正面，正面变成了背面刚才的样子，视觉上就是“图没变，但翻回来了”)
+        // 1. 既然用户喜欢这张背面图，我们就把“正面”也立刻换成这张图。
+        //    因为此时正面在后面藏着（backface-visibility: hidden），用户看不见我们换图的操作。
+        currentIndex = (currentIndex + 1) % hiddenImages.length; // 指针移到当前显示的图
         frontImg.src = hiddenImages[currentIndex];
 
-        // 3. 等翻转动画结束 (600ms) 后，悄悄把背面换成如下一张图，为下一次翻转做准备
+        // 2. 卡片开始翻转回正面。
+        //    视觉效果：用户看到背面是图2，翻转回来正面也是图2。感觉就像“卡片转了一圈，图像没变”。
+
+        // 3. 等翻转动画结束 (600ms) 后，我们悄悄把背面换成“下一张图”，为下一次悬停做准备。
         setTimeout(function() {
           const nextIndex = (currentIndex + 1) % hiddenImages.length;
           backImg.src = hiddenImages[nextIndex];

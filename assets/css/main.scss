@@ -360,7 +360,7 @@ li a:hover {
 }
 
 /* =======================================================
-   Avatar Flip Effect (头像翻转特效)
+   Avatar Flip Effect (头像翻转特效 - 移动端适配版)
    ======================================================= */
 
 /* 1. 容器设置 */
@@ -370,7 +370,11 @@ li a:hover {
   height: 150px; /* 固定高度 */
   margin: 0 auto;
   cursor: pointer;
-  display: block !important; /* 关键修复：防止原主题 display: table 导致的高宽失效 */
+  display: block !important; 
+  
+  /* --- 关键修复：防止在手机上被挤扁 --- */
+  min-width: 150px !important; /* 强制最小宽度 */
+  flex-shrink: 0 !important;   /* 禁止 Flex 布局压缩它 */
 }
 
 /* 鼠标悬停时：触发内部旋转 */
@@ -400,9 +404,10 @@ li a:hover {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   
-  /* 修复部分浏览器圆角溢出问题 */
+  /* 修复部分手机浏览器圆角溢出/闪烁问题 */
   transform: translateZ(0); 
   -webkit-transform: translateZ(0); 
+  -webkit-mask-image: -webkit-radial-gradient(white, black); /* 强力修复圆角遮罩 */
 }
 
 /* 正面：默认状态 */
@@ -426,9 +431,24 @@ li a:hover {
   display: block;
 }
 
-/* 5. 覆盖原主题可能存在的干扰样式 */
+/* 5. 覆盖原主题干扰 */
 .sidebar .author__avatar {
   padding: 0 !important;
   border: none !important;
-  background: transparent !important; /* 防止容器有背景色 */
+  background: transparent !important;
+}
+
+/* 手机端布局优化：让侧边栏信息垂直排列，不再拥挤 */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    /* 强制去掉侧边栏的 Flex 布局，改为默认的垂直堆叠 */
+    display: block !important;
+    text-align: center; /* 让内容居中 */
+  }
+  
+  .author__content {
+    /* 给名字和简介加点上边距 */
+    margin-top: 15px !important;
+    width: 100% !important;
+  }
 }
