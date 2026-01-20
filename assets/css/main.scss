@@ -408,6 +408,7 @@ li a:hover {
   transform: translateZ(0); 
   -webkit-transform: translateZ(0); 
   -webkit-mask-image: -webkit-radial-gradient(white, black); /* 强力修复圆角遮罩 */
+  mask-image: radial-gradient(white, black); /* 标准写法，兼容未来 */
 }
 
 /* 正面：默认状态 */
