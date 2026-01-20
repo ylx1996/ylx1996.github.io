@@ -622,3 +622,47 @@ li a:hover {
     margin-bottom: 5px !important;
   }
 }
+
+/* =======================================================
+   5. Desktop Sidebar Spacing (电脑端侧边栏间距优化)
+   ======================================================= */
+
+/* 仅在电脑/平板端生效 (因为手机端我们已经把这些隐藏或重排了) */
+@media screen and (min-width: 769px) {
+  
+  /* 1. 名字 (Lingxiao Yang) 下方的间距 */
+  .author__content .author__name {
+    margin-bottom: 20px !important; /* 拉开名字和简介的距离 */
+    padding-bottom: 5px !important; /* 微调内边距 */
+  }
+
+  /* 2. 简介 (Focusing on...) 的间距 */
+  .author__bio {
+    margin-top: 0 !important;
+    margin-bottom: 25px !important; /* 拉开简介和下方链接列表的距离 */
+    line-height: 1.6 !important;    /* 增加行高，让文字阅读更舒服 */
+  }
+
+  /* 3. 社交链接列表 (Email, Scholar...) */
+  .author__urls.social-icons {
+    margin-top: 0 !important;
+  }
+
+  /* 每一行链接的间距 */
+  .author__urls.social-icons li {
+    margin-bottom: 12px !important; /* 让每一行链接之间不要贴得太近 */
+    line-height: 1.5 !important;
+  }
+
+  /* 4. 图标微调：固定宽度，确保文字垂直对齐 */
+  .author__urls.social-icons li i {
+    width: 26px !important; /* 固定图标区域宽度 */
+    text-align: center;     /* 图标居中 */
+    margin-right: 5px !important;
+  }
+
+  /* 5. 地图上方的间距 */
+  .sidebar-map-container {
+    margin-top: 35px !important; /* 地图和上面列表的距离 */
+  }
+}
