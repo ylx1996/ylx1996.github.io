@@ -1,5 +1,29 @@
 
-# 📝 Publications 
+<h1 id="-publications" style="display: flex; align-items: center; flex-wrap: wrap;">
+  📝 Publications
+  <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/files/lxyang-260205.bib" download style="
+      margin-left: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #0366d6;
+      background-color: #f1f8ff;
+      border: 1px solid rgba(27,31,35,0.15);
+      border-radius: 4px;
+      padding: 0 12px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      line-height: 1;
+      font-family: system-ui, -apple-system, sans-serif;
+      cursor: pointer;
+      vertical-align: middle;
+      transition: all 0.2s ease;
+  " onmouseover="this.style.backgroundColor='#0366d6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#f1f8ff'; this.style.color='#0366d6';">
+    Full BibTeX
+  </a>
+</h1>
 ## 🚀 Blockchain Performance Optimization
 
 <div class='paper-box'>
