@@ -44,8 +44,8 @@
     <p>This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.</p>
 
     <div class="paper-buttons">
-      <a href="link_to_pdf">PDF</a>
-      <a href="link_to_ppt">PPT</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf" target="_blank">PDF</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_PPT/230720icdcs-slide-yang.pptx" target="_blank">PPT</a>
       <button class="bib-btn" data-bibtex="@inproceedings{yang2023optimal, author = {Yang, Lingxiao and Dong, Xuewen and Gao, Sheng and Qu, Qiang and Zhang, Xiaodong and Tian, Wensheng and Shen, Yulong}, title = {Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability}, booktitle = {2023 IEEE 43rd International Conference on Distributed Computing Systems (ICDCS)}, pages = {692--702}, year = {2023}, organization={IEEE}}">Bib</button>
     </div>
 
@@ -78,8 +78,8 @@
     </p>
 
     <div class="paper-buttons">
-      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/AsyncSC_An_Asynchronous_Sidechain_for_Multi-Domain_Data_Exchange_in_Internet_of_Things.pdf">PDF</a>
-      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/2025infocom-yang.pptx">PPT</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_papers/AsyncSC_An_Asynchronous_Sidechain_for_Multi-Domain_Data_Exchange_in_Internet_of_Things.pdf" target="_blank">PDF</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_PPT/2025infocom-yang.pptx" target="_blank">PPT</a>
       <button class="bib-btn" data-bibtex="@inproceedings{yang2025asyncsc, title = {Asyncsc: An asynchronous sidechain for multi-domain data exchange in internet of things}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Gao, Sheng and Tong, Wei and Lu, Di and Shen, Yulong and Du, Xiaojiang}, booktitle = {IEEE INFOCOM 2025-IEEE Conference on Computer Communications}, pages = {1--10}, year = {2025}, organization = {IEEE}}">Bib</button>
     </div>
   </div>
@@ -115,8 +115,8 @@
     </p>
 
     <div class="paper-buttons">
-      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_papers/HiCoCS_High_Concurrency_Cross-Sharding_on_Permissioned_Blockchains.pdf">PDF</a>
-      <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/_PPT/TC25-Intro.pptx">PPT</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_papers/HiCoCS_High_Concurrency_Cross-Sharding_on_Permissioned_Blockchains.pdf" target="_blank">PDF</a>
+      <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_PPT/TC25-Intro.pptx" target="_blank">PPT</a>
       <button class="bib-btn" data-bibtex="@article{yang2025hicocs, title = {HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains}, author = {Yang, Lingxiao and Dong, Xuewen and Wan, Zhiguo and Lu, Di and Zhang, Yushu and Shen, Yulong}, journal = {IEEE Transactions on Computers (TC)}, volume = {74}, number = {7}, pages = {2168-2182}, year = {2025}, organization = {IEEE}}">Bib</button>
     </div>
   </div>
