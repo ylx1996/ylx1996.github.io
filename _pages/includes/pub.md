@@ -1,26 +1,27 @@
-
 <h1 id="-publications" style="display: flex; align-items: center; flex-wrap: wrap;">
   📝 Publications
-  <a href="https://github.com/ylx1996/ylx1996.github.io/blob/main/files/lxyang-260205.bib" download style="
+  <a href="{{ '/files/lxyang-260205.bib' | relative_url }}" download target="_blank" style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      height: 28px;
+      padding: 0 12px;
       margin-left: 15px;
+      margin-top: 5px;
       font-size: 12px;
       font-weight: 600;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1; 
+      text-decoration: none;
       color: #0366d6;
       background-color: #f1f8ff;
       border: 1px solid rgba(27,31,35,0.15);
       border-radius: 4px;
-      padding: 0 12px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 28px;
-      line-height: 1;
-      font-family: system-ui, -apple-system, sans-serif;
+      box-sizing: border-box;
       cursor: pointer;
-      vertical-align: middle;
       transition: all 0.2s ease;
-  " onmouseover="this.style.backgroundColor='#0366d6'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#f1f8ff'; this.style.color='#0366d6';">
+  " onmouseover="this.style.backgroundColor='#0366d6'; this.style.color='#ffffff'; this.style.borderColor='#0366d6';" onmouseout="this.style.backgroundColor='#f1f8ff'; this.style.color='#0366d6'; this.style.borderColor='rgba(27,31,35,0.15)';">
     Full BibTeX
   </a>
 </h1>
