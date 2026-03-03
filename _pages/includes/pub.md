@@ -107,7 +107,7 @@
     <a href="https://ieeexplore.ieee.org/abstract/document/10949782/">HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains</a>
     
     <p>
-      <strong>Lingxiao Yang</strong>, Xuewen Dong, Wei Wang, Sheng Gao, Qiang Qu, Wensheng Tian, Yulong Shen.
+      <strong>Lingxiao Yang</strong>, Xuewen Dong, Zhiguo Wan, Di Lu, Yushu Zhang, Yulong Shen.
     </p>
 
     <p>
