@@ -12,6 +12,7 @@
 
 # 🔬 Academic Services
 ## Technical Program Committee/Editorial Board
+- [Journal of Networking and Network Applications](https://iecscience.org/journals/J-NaNA), AE, 2026-Now
 - [IEEE International Conference on Networking and Network Applications (NaNA)](http://www.nana-conference.org/), TPC, 2023-2024
 - [ELSP Blockchain](https://www.elspub.com/journals/blockchain/home/) (EiC: [Prof. Xiaotie Deng](https://cfcs.pku.edu.cn/people/faculty/xiaotiedeng/index.htm)), Youth Editorial Board, 2025-Now
 
