@@ -1,29 +1,56 @@
 name: Get Citation Data
 
-on: 
- page_build: 
- schedule:
-  - cron:  '0 8 * * *'
+on:
+  workflow_dispatch:
+  schedule:
+    # 16:17 China Standard Time; scheduled runs can be delayed by GitHub.
+    - cron: '17 8 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/google_scholar_crawler.yaml'
+      - 'google_scholar_crawler/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google-scholar-stats
+  cancel-in-progress: false
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
-      run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
-      run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
-        git init
-        git config --local user.name "${GITHUB_ACTOR}"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-        git add *.json
-        git commit -m "Updated Citation Data"
-        git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: google_scholar_crawler/requirements.txt
+      - name: Fetch and validate citation data
+        env:
+          # The Scholar ID is public. An existing secret or repository variable can override it.
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID || vars.GOOGLE_SCHOLAR_ID || 'NQ0z_lgAAAAJ' }}
+        run: |
+          python -m pip install -r google_scholar_crawler/requirements.txt
+          python google_scholar_crawler/main.py
+      - name: Check out statistics branch
+        uses: actions/checkout@v4
+        with:
+          ref: google-scholar-stats
+          path: scholar-stats
+      - name: Publish validated statistics
+        working-directory: scholar-stats
+        run: |
+          cp ../google_scholar_crawler/results/gs_data*.json .
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add gs_data.json gs_data_shieldsio.json
+          if git diff --cached --quiet; then
+            echo 'Citation data unchanged.'
+            exit 0
+          fi
+          git commit -m 'Update Google Scholar citation statistics'
+          git push origin HEAD:google-scholar-stats

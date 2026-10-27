@@ -1,19 +1,35 @@
 <script>
     $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            // var totalCitation = data['citedby']
-            // document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+        // Use raw data to avoid an additional CDN cache for this daily statistic.
+        var statsUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json';
+        var scholarUrl = {{ site.author.googlescholar | jsonify }};
+        var expectedId = new URL(scholarUrl).searchParams.get('user');
+        $.getJSON(statsUrl, function (data) {
+            var publications = data.publications || {};
+            var paperIds = Object.keys(publications);
+            // Reject legacy template data even when its top-level ID was edited.
+            if (data.scholar_id !== expectedId ||
+                !Number.isInteger(data.citedby) || data.citedby < 0 ||
+                paperIds.some(function (id) { return id.indexOf(expectedId + ':') !== 0; })) {
+                console.warn('Google Scholar statistics failed author validation.');
+                return;
+            }
+            var badge = document.getElementById('google-scholar-citations');
+            if (badge) {
+                badge.src = 'https://img.shields.io/badge/citations-' + data.citedby + '-blue?logo=Google%20Scholar&style=flat&labelColor=f6f6f6';
+                badge.alt = 'Google Scholar citations: ' + data.citedby;
+                badge.title = 'Google Scholar; updated ' + data.updated;
+            }
+            var total = document.getElementById('total_cit');
+            if (total) total.textContent = data.citedby;
+            Array.prototype.forEach.call(document.getElementsByClassName('show_paper_citations'), function (element) {
+                var paper = publications[element.getAttribute('data')];
+                if (paper && Number.isInteger(paper.num_citations) && paper.num_citations >= 0) {
+                    element.textContent = '| Citations: ' + paper.num_citations;
+                }
             });
+        }).fail(function () {
+            console.warn('Google Scholar statistics could not be loaded.');
         });
-    })
+    });
 </script>
