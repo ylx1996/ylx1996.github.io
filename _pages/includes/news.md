@@ -1,4 +1,5 @@
 # 🔥 News
+- *2026.10*: 🎉 Lingxiao Yang has been approved as a master's supervisor. Prospective master's students are welcome to apply and [contact me](mailto:lxyang@snnu.edu.cn)!
 - *2025.12*: 🎉 One paper is accepted by IEEE Transactions on Services Computing (TSC) ! "AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things" (CCF-A) !
 - *2025.12*: 🎉 [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) has been selected as an [IEEE Fellow Class of 2026](https://ieee-org.widen.net/s/qqrqr2nrk6/fellow-class-announcement-2026) for contributions to trusted architectures for high-performance cloud-edge-user computing, congratulations !
 - *2025.11*: 🎉 One paper is accepted by IEEE Transactions on Services Computing (TSC) ! "MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead" (CCF-A), congratulations to Dr. Xiaojie Guo !
