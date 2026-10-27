@@ -93,6 +93,8 @@
 
 - `IoT-J 2023` [TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive](https://ieeexplore.ieee.org/abstract/document/10198563), Wei Tong, Xuewen Dong, Yushu Zhang, Zongyang Zhang, **Lingxiao Yang**, Weidong Yang, Yulong Shen. <button class="bib-btn" data-bibtex="@ARTICLE{10198563, title = {TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV With Trust and Incentive}, author = {Tong, Wei and Dong, Xuewen and Zhang, Yushu and Zhang, Zongyang and Yang, Lingxiao and Yang, Weidong and Shen, Yulong}, journal = {IEEE Internet of Things Journal}, volume = {10}, number = {24}, pages = {21528-21543}, year = {2023}, organization = {IEEE}}">Bib</button>
 
+- `NSS 2026` CROSS: Cross-chain Recovery-Oriented State Synchronization, **Lingxiao Yang**, Qixin Xu, Enze Zhang, and Lele Zheng. **Best Paper Award**.
+
 
 ## 📚 Scaling Blockchain via Sharding
 
