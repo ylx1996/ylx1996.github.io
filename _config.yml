@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Lingxiao Yang (杨凌霄)"
-description              : "Focusing on blockchain scalability and security, and AI security."
+description              : "Research on blockchain scalability, blockchain security, and AI security."
 repository               : "ylx1996/ylx1996.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -28,7 +28,7 @@ author:
   employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=NQ0z_lgAAAAJ&hl=zh-CN"
-  email            : "lxyang@snnu.edu.cn"
+  email            : # Contact address is written in human-readable form in the introduction.
   researchgate     : "https://www.researchgate.net/profile/Lingxiao-Yang-8?ev=hdr_xprf"
   uri              :
   bitbucket        :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         : #"rayeren"
   dblp             : "https://dblp.org/pid/56/7126.html"
-  orcid            : "https://orcid.org/my-orcid?orcid=0000-0002-9934-8714"
+  orcid            : "https://orcid.org/0000-0002-9934-8714"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

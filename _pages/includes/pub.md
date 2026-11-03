@@ -31,7 +31,7 @@
   <div class='paper-box-image'>
     <div>
       <div class="badge">ICDCS 2023</div>
-      <img src='images/icdcs23.png' alt="sym">
+      <img src='images/icdcs23.png' alt="Paper overview">
     </div>
   </div>
   <div class='paper-box-text'>
@@ -41,7 +41,7 @@
       <strong>Lingxiao Yang</strong>, Xuewen Dong, Sheng Gao, Qiang Qu, Xiaodong Zhang, Wensheng Tian, Yulong Shen.
     </p>
 
-    <p>This paper proposes a novel solution called ​​Splicer​​ to address key scalability challenges in Payment Channel Networks (PCNs). The core idea is to use multiple Payment Channel Hubs (PCHs), termed ​​smooth nodes​​, to optimize network load balancing and enable high-performance, deadlock-free routing.</p>
+    <p>This paper presents Splicer, a solution to scalability challenges in payment channel networks (PCNs). Splicer uses multiple payment channel hubs (PCHs), termed smooth nodes, to optimize load balancing and enable high-performance, deadlock-free routing.</p>
 
     <div class="paper-buttons">
       <a href="https://github.com/ylx1996/ylx1996.github.io/raw/main/_papers/Optimal_Hub_Placement_and_Deadlock-Free_Routing_for_Payment_Channel_Network_Scalability.pdf" target="_blank">PDF</a>
@@ -63,7 +63,7 @@
   <div class='paper-box-image'>
     <div>
       <div class="badge">INFOCOM 2025</div>
-      <img src='images/infocom25.png' alt="sym" width="100%">
+      <img src='images/infocom25.png' alt="Paper overview" width="100%">
     </div>
   </div>
   <div class='paper-box-text'>
@@ -74,7 +74,7 @@
     </p>
 
     <p>
-      ​AsyncSC​​'s key innovation​ is addressing the limitation of existing sidechain solutions that require synchronous network conditions, which are often impractical for resource-constrained and intermittently connected IoT devices. AsyncSC achieves high performance and security in asynchronous environments through a new cryptographic primitive and a transaction ordering mechanism.
+      AsyncSC addresses the reliance of existing sidechain solutions on synchronous network conditions, which can be impractical for resource-constrained IoT devices with intermittent connectivity. It combines a cryptographic primitive with a transaction ordering mechanism to support efficient and secure data exchange in asynchronous environments.
     </p>
 
     <div class="paper-buttons">
@@ -102,7 +102,7 @@
   <div class='paper-box-image'>
     <div>
       <div class="badge">TC 2025</div>
-      <img src='images/tc25.png' alt="sym" width="100%">
+      <img src='images/tc25.png' alt="Paper overview" width="100%">
     </div>
   </div>
   <div class='paper-box-text'>
@@ -113,7 +113,7 @@
     </p>
 
     <p>
-      HiCoCS is presented as the first solution to effectively solve the problem of highly concurrent CSTxs. It achieves this by cleverly leveraging existing platform features (composite keys) for conflict-free processing, combined with advanced cryptography (FHE) for privacy.
+      HiCoCS addresses highly concurrent cross-shard transactions (CSTxs). It uses composite keys for conflict-free processing and fully homomorphic encryption (FHE) for privacy.
     </p>
 
     <div class="paper-buttons">

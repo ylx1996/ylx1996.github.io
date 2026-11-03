@@ -1,14 +1,14 @@
 # 🔥 News
-- *2026.10*: 🎉 One paper has been accepted by the [20th International Conference on Network and System Security (NSS 2026)](https://nsclab.org/nss2026/) and received the **Best Paper Award**! "CROSS: Cross-chain Recovery-Oriented State Synchronization".
-- *2026.10*: 🎉 Lingxiao Yang has been approved as a master's supervisor. Prospective master's students are welcome to apply and [contact me](mailto:lxyang@snnu.edu.cn)!
-- *2025.12*: 🎉 One paper is accepted by IEEE Transactions on Services Computing (TSC) ! "AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things" (CCF-A) !
-- *2025.12*: 🎉 [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) has been selected as an [IEEE Fellow Class of 2026](https://ieee-org.widen.net/s/qqrqr2nrk6/fellow-class-announcement-2026) for contributions to trusted architectures for high-performance cloud-edge-user computing, congratulations !
-- *2025.11*: 🎉 One paper is accepted by IEEE Transactions on Services Computing (TSC) ! "MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead" (CCF-A), congratulations to Dr. Xiaojie Guo !
-- *2025.07*: 🎉 Lingxiao joined the team of [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) from the School of Artificial Intelligence and Computer Science, Shaanxi Normal University !
-- *2025.06*: 🎉 Lingxiao is awarded a Ph.D degree from Xidian University ! "Research on Key Technologies for the Optimization of Consortium Blockchain Scalability with Security (联盟链安全可扩展性优化关键技术研究)".
-- *2025.03*: 🎉 One paper is accepted by IEEE Transactions on Computers (TC) ! "HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains" (CCF-A).
-- *2024.12*: 🎉 One paper is accepted by IEEE INFOCOM 2025 ! "AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things" (272/1458 = 18.65%, CCF-A). 
-- *2024.06*: 🎉 One paper is accepted by BlockSys 2024 ! "A Survey on Blockchain Scalability".
-- *2023.07*: 🎉 One paper is accepted by IEEE Internet of Things Journal (IoT-J) ! "TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive".
-- *2023.04*: 🎉 One paper is accepted by IEEE ICDCS 2023 ! "Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability" (83/439 = 18.91%, CCF-B).
+- *2026.10*: 🎉 "CROSS: Cross-chain Recovery-Oriented State Synchronization" was accepted at the [20th International Conference on Network and System Security (NSS 2026)](https://nsclab.org/nss2026/) and received the **Best Paper Award**!
+- *2026.10*: 🎉 Lingxiao Yang was approved to supervise master's students. Prospective master's students are welcome to apply and contact me using the address above!
+- *2025.12*: 🎉 "AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things" was accepted for publication in IEEE Transactions on Services Computing (TSC) (CCF-A)!
+- *2025.12*: 🎉 [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) was named an [IEEE Fellow (Class of 2026)](https://ieee-org.widen.net/s/qqrqr2nrk6/fellow-class-announcement-2026) for contributions to trusted architectures for high-performance cloud-edge-user computing. Congratulations!
+- *2025.11*: 🎉 "MHCertChain: A Multi-CA Hierarchical Certificate Blockchain with Low Overhead" was accepted for publication in IEEE Transactions on Services Computing (TSC) (CCF-A). Congratulations to Dr. Xiaojie Guo!
+- *2025.07*: 🎉 Lingxiao joined the team of [Prof. Yong Yu (禹勇)](https://ccs.snnu.edu.cn/info/1016/2301.htm) from the School of Artificial Intelligence and Computer Science, Shaanxi Normal University!
+- *2025.06*: 🎉 Lingxiao received his Ph.D. from Xidian University! Dissertation: "Research on Key Technologies for the Optimization of Consortium Blockchain Scalability with Security (联盟链安全可扩展性优化关键技术研究)".
+- *2025.03*: 🎉 "HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains" was accepted for publication in IEEE Transactions on Computers (TC) (CCF-A).
+- *2024.12*: 🎉 "AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things" was accepted at IEEE INFOCOM 2025 (272/1458 = 18.65%, CCF-A).
+- *2024.06*: 🎉 "A Survey on Blockchain Scalability" was accepted at BlockSys 2024.
+- *2023.07*: 🎉 "TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive" was accepted for publication in IEEE Internet of Things Journal (IoT-J).
+- *2023.04*: 🎉 "Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability" was accepted at IEEE ICDCS 2023 (83/439 = 18.91%, CCF-B).
 
