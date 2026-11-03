@@ -46,7 +46,10 @@
     "url": "https://ieeexplore.ieee.org/document/11314793/"
   },
   "guo2025mhcertchain": {
-    "source": "Existing repository bibliography; formatting normalized without adding unverified publication fields."
+    "source": "Crossref publisher-deposited journal metadata and author-linked Google Scholar detail, verified 2026-11-03 UTC. Full author list matches; formal print year 2026, volume 19, issue 1, pages 491--503. Existing Publications Bib button agrees; its TSC 2025 display label retains the early-access year.",
+    "url": "https://doi.org/10.1109/tsc.2025.3639573",
+    "metadata_url": "https://api.crossref.org/works/10.1109/tsc.2025.3639573",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NQ0z_lgAAAAJ&citation_for_view=NQ0z_lgAAAAJ:Se3iqnhoufwC"
   },
   "ma2020blockchain": {
     "source": "Existing repository bibliography; formatting normalized without adding unverified publication fields."
