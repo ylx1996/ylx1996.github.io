@@ -5,7 +5,7 @@
 - *2011.09 - 2014.06*, Huangpi No.1 High School, Wuhan.
 
 # 💬 Invited Talks
-- *2026.10 - 2026.11*, [NSS 2026](https://nsclab.org/nss2026/)
+- *2026.10*, NSS 2026 \| [\[Main Technical Program\]](https://nsclab.org/nss2026/)
 - *2025.05*, INFOCOM 2025 \| [\[Main Technical Program\]](https://infocom2025.ieee-infocom.org/program/main-technical-program)
 - *2023.07*, ICDCS 2023 \| [\[Main Conference Program\]](https://icdcs2023.icdcs.org/programs/)
 - *2020.12*, NaNA 2020 \| [\[Main Conference Program\]](http://www.nana-conference.org/program2020.html)
