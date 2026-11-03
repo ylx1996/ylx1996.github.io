@@ -742,3 +742,16 @@ li a:hover {
   .flip-container:hover .flipper { transform: none; }
   .paper-box:hover { transform: none; }
 }
+
+/* Local citation badge: no external image request is needed. */
+.citation-badge {
+  display: inline-flex;
+  vertical-align: middle;
+  font: 11px/1.5 system-ui, sans-serif;
+  border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.citation-badge__label { background: #f1f3f5; color: #444; padding: 1px 5px; }
+.citation-badge__count { background: #007ec6; color: white; padding: 1px 5px; min-width: 2em; text-align: center; }
+@media (max-width: 768px) { .visitor-map-frame { height: 260px !important; } }

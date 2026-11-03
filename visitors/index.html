@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visitor map</title>
+  <style>
+    body { margin: 0; font: 13px/1.5 system-ui, sans-serif; color: #586069; }
+    #status { margin: 0; padding: 12px 8px; text-align: center; }
+    #status a { color: #0366d6; }
+    #mapmyvisitors-widget { max-width: 100%; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <p id="status" role="status">Loading visitor statistics…</p>
+  <script>
+    (function () {
+      var status = document.getElementById('status');
+      var started = Date.now();
+      var timer = setInterval(function () {
+        var count = document.querySelector('.mapmyvisitors-visitors');
+        if (count && /\d/.test(count.textContent)) {
+          status.hidden = true;
+          document.body.dataset.status = 'ready';
+          clearInterval(timer);
+        } else if (Date.now() - started > 12000) {
+          var widget = document.getElementById('mapmyvisitors-widget');
+          if (widget) widget.hidden = true;
+          status.textContent = 'Visitor statistics are temporarily unavailable. ';
+          var link = document.createElement('a');
+          link.href = 'https://mapmyvisitors.com/web/1c1y7';
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = 'View statistics';
+          status.appendChild(link);
+          document.body.dataset.status = 'unavailable';
+          clearInterval(timer);
+        }
+      }, 250);
+    }());
+  </script>
+  <script id="mapmyvisitors" async src="https://mapmyvisitors.com/map.js?d=UIXdfCDpE2BslvQkr7zH76iTmMcbbtt2ybwgWHB04Dk&amp;cl=ffffff&amp;w=a"></script>
+</body>
+</html>

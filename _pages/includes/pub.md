@@ -1,6 +1,6 @@
 <h1 id="-publications" style="display: flex; align-items: center; flex-wrap: wrap;">
   📝 Publications
-  <a href="{{ '/files/lxyang-260205.bib' | relative_url }}" download target="_blank" style="
+  <a href="{{ '/bibliography/' | relative_url }}" target="_blank" rel="noopener noreferrer" style="
       display: inline-flex;
       align-items: center;
       justify-content: center;

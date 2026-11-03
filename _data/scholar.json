@@ -1,0 +1,142 @@
+{
+  "scholar_id": "NQ0z_lgAAAAJ",
+  "name": "Lingxiao Yang",
+  "citedby": 163,
+  "publications": {
+    "NQ0z_lgAAAAJ:u5HHmVD_uO8C": {
+      "bib": {
+        "title": "An Abnormal Transaction Detection Mechanism on Bitcoin",
+        "pub_year": "2019"
+      },
+      "num_citations": 53
+    },
+    "NQ0z_lgAAAAJ:Tyk-4Ss8FVUC": {
+      "bib": {
+        "title": "TI-BIoV: Traffic Information Interaction for Blockchain-Based IoV with Trust and Incentive",
+        "pub_year": "2023"
+      },
+      "num_citations": 27
+    },
+    "NQ0z_lgAAAAJ:IjCSPb-OGe4C": {
+      "bib": {
+        "title": "Optimal Hub Placement and Deadlock-Free Routing for Payment Channel Network Scalability",
+        "pub_year": "2023"
+      },
+      "num_citations": 19
+    },
+    "NQ0z_lgAAAAJ:ufrVoPGSRksC": {
+      "bib": {
+        "title": "HiCoCS: High Concurrency Cross-Sharding on Permissioned Blockchains",
+        "pub_year": "2025"
+      },
+      "num_citations": 11
+    },
+    "NQ0z_lgAAAAJ:2osOgNQ5qMEC": {
+      "bib": {
+        "title": "Secure Off-chain Payment in Consortium Blockchain System",
+        "pub_year": "2020"
+      },
+      "num_citations": 11
+    },
+    "NQ0z_lgAAAAJ:WF5omc3nYNoC": {
+      "bib": {
+        "title": "AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things",
+        "pub_year": "2025"
+      },
+      "num_citations": 9
+    },
+    "NQ0z_lgAAAAJ:d1gkVwhDpl0C": {
+      "bib": {
+        "title": "Generic-NFT: A Generic Non-Fungible Token Architecture for Flexible Value Transfer in Web3",
+        "pub_year": "2023"
+      },
+      "num_citations": 9
+    },
+    "NQ0z_lgAAAAJ:9yKSN-GCB0IC": {
+      "bib": {
+        "title": "B-SDN: A Novel Blockchain-based Software Defined Network Architecture",
+        "pub_year": "2020"
+      },
+      "num_citations": 7
+    },
+    "NQ0z_lgAAAAJ:roLk4NBRz8UC": {
+      "bib": {
+        "title": "AC-BaaS: An Asynchronous Cross-Blockchain as a Service for the Internet of Things",
+        "pub_year": "2026"
+      },
+      "num_citations": 5
+    },
+    "NQ0z_lgAAAAJ:YsMSGLbcyi4C": {
+      "bib": {
+        "title": "A Survey on Blockchain Scalability",
+        "pub_year": "2024"
+      },
+      "num_citations": 4
+    },
+    "NQ0z_lgAAAAJ:_FxGoFyzp5QC": {
+      "bib": {
+        "title": "SHARE: Optimizing Secure Hub Allocation and Routing Efficiency in Payment Channel Networks",
+        "pub_year": "2025"
+      },
+      "num_citations": 3
+    },
+    "NQ0z_lgAAAAJ:Se3iqnhoufwC": {
+      "bib": {
+        "title": "MHCertChain: A Multi-CA Hierarchical Certificate Blockchain With Low Overhead",
+        "pub_year": "2026"
+      },
+      "num_citations": 2
+    },
+    "NQ0z_lgAAAAJ:hqOjcs7Dif8C": {
+      "bib": {
+        "title": "AoI-and DS-Enhanced Cooperative Search for Multi-UAV Systems Under Spatially Structured Communication Constraints",
+        "pub_year": "2026"
+      },
+      "num_citations": 1
+    },
+    "NQ0z_lgAAAAJ:u-x6o8ySG0sC": {
+      "bib": {
+        "title": "Link-ability: A Prediction Method of Web Service Compatibility based on Markov Process",
+        "pub_year": "2022"
+      },
+      "num_citations": 1
+    },
+    "NQ0z_lgAAAAJ:qjMakFHDy7sC": {
+      "bib": {
+        "title": "TAKAP: A Lightweight Three‐Party Authenticated Key Agreement Protocol with User Anonymity",
+        "pub_year": "2021"
+      },
+      "num_citations": 1
+    },
+    "NQ0z_lgAAAAJ:0EnyYjriUFMC": {
+      "bib": {
+        "title": "Scene-Adaptive Task Offloading in Heterogeneous Edge Networks via Graph Neural Network-Enhanced Deep Reinforcement Learning",
+        "pub_year": "2026"
+      },
+      "num_citations": 0
+    },
+    "NQ0z_lgAAAAJ:W7OEmFMy1HYC": {
+      "bib": {
+        "title": "Blockchain and Oracle-Driven Web3 Architecture for Data Interaction",
+        "pub_year": "2024"
+      },
+      "num_citations": 0
+    },
+    "NQ0z_lgAAAAJ:zYLM7Y9cAGgC": {
+      "bib": {
+        "title": "Link-ability: A Compatibility Prediction Method of Wireless Service based on Markov Process.",
+        "pub_year": "2023"
+      },
+      "num_citations": 0
+    },
+    "NQ0z_lgAAAAJ:UebtZRa9Y70C": {
+      "bib": {
+        "title": "区块链共识窗口下 Web 服务兼容性评价方法",
+        "pub_year": "2020"
+      },
+      "num_citations": 0
+    }
+  },
+  "source_url": "https://scholar.google.com/citations?user=NQ0z_lgAAAAJ",
+  "updated": "2026-11-03T06:01:10.653430+00:00"
+}
