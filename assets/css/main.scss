@@ -666,3 +666,79 @@ li a:hover {
     margin-top: 35px !important; /* 地图和上面列表的距离 */
   }
 }
+/* Reveal the contact address on hover, keyboard focus, or a tap on the icon. */
+.contact-email {
+  display: inline-flex;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.contact-email__button {
+  appearance: none;
+  border: 0;
+  padding: 0 0.2em;
+  background: transparent;
+  color: #0366d6;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-email__button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.contact-email__tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.4em);
+  right: 0;
+  z-index: 20;
+  width: max-content;
+  max-width: 18rem;
+  max-width: calc(100vw - 2rem);
+  padding: 0.5em 0.7em;
+  border: 1px solid #d0d7de;
+  border-radius: 5px;
+  background: #fff;
+  color: #24292f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  font-size: 0.85em;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contact-email:hover .contact-email__tooltip,
+.contact-email:focus-within .contact-email__tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Narrow-screen reading and touch targets. */
+@media screen and (max-width: 768px) {
+  .page__content p, .page__content li, .paper-box .paper-box-text p {
+    text-align: left;
+    hyphens: none;
+    overflow-wrap: anywhere;
+  }
+  .page__content h1, .page__content h2 { overflow-wrap: anywhere; }
+  .paper-box { padding: 16px; }
+  .paper-box .paper-box-text { min-width: 0; }
+  .paper-buttons a, .paper-buttons button, .bib-btn { min-height: 40px; }
+  .contact-email__button { min-width: 40px; min-height: 40px; }
+  .contact-email__tooltip {
+    position: fixed;
+    top: auto;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    max-width: none;
+  }
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .flip-container:hover .flipper { transform: none; }
+  .paper-box:hover { transform: none; }
+}

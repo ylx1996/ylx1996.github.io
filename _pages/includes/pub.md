@@ -31,7 +31,7 @@
   <div class='paper-box-image'>
     <div>
       <div class="badge">ICDCS 2023</div>
-      <img src='images/icdcs23.png' alt="Paper overview">
+      <img loading="lazy" decoding="async" src='images/icdcs23.png' alt="Paper overview">
     </div>
   </div>
   <div class='paper-box-text'>
@@ -63,7 +63,7 @@
   <div class='paper-box-image'>
     <div>
       <div class="badge">INFOCOM 2025</div>
-      <img src='images/infocom25.png' alt="Paper overview" width="100%">
+      <img loading="lazy" decoding="async" src='images/infocom25.png' alt="Paper overview" width="100%">
     </div>
   </div>
   <div class='paper-box-text'>
@@ -102,7 +102,7 @@
   <div class='paper-box-image'>
     <div>
       <div class="badge">TC 2025</div>
-      <img src='images/tc25.png' alt="Paper overview" width="100%">
+      <img loading="lazy" decoding="async" src='images/tc25.png' alt="Paper overview" width="100%">
     </div>
   </div>
   <div class='paper-box-text'>
