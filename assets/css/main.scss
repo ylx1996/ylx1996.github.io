@@ -543,7 +543,7 @@ li a:hover {
 
 .map-content {
   padding: 10px;
-  min-height: 100px; /* 防止加载慢时高度坍塌 */
+  min-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -754,4 +754,4 @@ li a:hover {
 }
 .citation-badge__label { background: #f1f3f5; color: #444; padding: 1px 5px; }
 .citation-badge__count { background: #007ec6; color: white; padding: 1px 5px; min-width: 2em; text-align: center; }
-@media (max-width: 768px) { .visitor-map-frame { height: 260px !important; } }
+.visitor-map-frame { display: block; }

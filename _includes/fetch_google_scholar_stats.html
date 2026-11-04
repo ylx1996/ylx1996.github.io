@@ -1,5 +1,24 @@
 <script>
     $(document).ready(function () {
+        // Count the same canonical bibliography used by the Full BibTeX page.
+        var paperCount = document.getElementById('publication-count');
+        if (paperCount) {
+            fetch({{ '/files/lxyang-260205.bib' | relative_url | jsonify }}, { cache: 'no-cache' })
+                .then(function (response) {
+                    if (!response.ok) throw new Error('HTTP ' + response.status);
+                    return response.text();
+                })
+                .then(function (text) {
+                    var entries = text.match(/^@(?:inproceedings|article|misc)\s*\{/gim) || [];
+                    if (!entries.length) throw new Error('No bibliography entries.');
+                    paperCount.textContent = entries.length + '+ ';
+                })
+                .catch(function () {
+                    // Keep the grammatical sentence without a count when unavailable.
+                    console.warn('Bibliography count could not be loaded.');
+                });
+        }
+
         // Publish validated data with the site; no third-party request on page load.
         var data = {{ site.data.scholar | jsonify }};
         var scholarUrl = {{ site.author.googlescholar | jsonify }};
