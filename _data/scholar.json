@@ -1,7 +1,7 @@
 {
   "scholar_id": "NQ0z_lgAAAAJ",
   "name": "Lingxiao Yang",
-  "citedby": 163,
+  "citedby": 164,
   "publications": {
     "NQ0z_lgAAAAJ:u5HHmVD_uO8C": {
       "bib": {
@@ -87,6 +87,13 @@
       },
       "num_citations": 2
     },
+    "NQ0z_lgAAAAJ:0EnyYjriUFMC": {
+      "bib": {
+        "title": "Scene-Adaptive Task Offloading in Heterogeneous Edge Networks via Graph Neural Network-Enhanced Deep Reinforcement Learning",
+        "pub_year": "2026"
+      },
+      "num_citations": 1
+    },
     "NQ0z_lgAAAAJ:hqOjcs7Dif8C": {
       "bib": {
         "title": "AoI-and DS-Enhanced Cooperative Search for Multi-UAV Systems Under Spatially Structured Communication Constraints",
@@ -107,13 +114,6 @@
         "pub_year": "2021"
       },
       "num_citations": 1
-    },
-    "NQ0z_lgAAAAJ:0EnyYjriUFMC": {
-      "bib": {
-        "title": "Scene-Adaptive Task Offloading in Heterogeneous Edge Networks via Graph Neural Network-Enhanced Deep Reinforcement Learning",
-        "pub_year": "2026"
-      },
-      "num_citations": 0
     },
     "NQ0z_lgAAAAJ:W7OEmFMy1HYC": {
       "bib": {
@@ -138,5 +138,5 @@
     }
   },
   "source_url": "https://scholar.google.com/citations?user=NQ0z_lgAAAAJ",
-  "updated": "2026-11-07T08:15:17.031811+00:00"
+  "updated": "2026-11-08T08:12:48.392207+00:00"
 }
