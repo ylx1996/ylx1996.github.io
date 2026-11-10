@@ -1,14 +1,14 @@
 {
   "scholar_id": "NQ0z_lgAAAAJ",
   "name": "Lingxiao Yang",
-  "citedby": 164,
+  "citedby": 165,
   "publications": {
     "NQ0z_lgAAAAJ:u5HHmVD_uO8C": {
       "bib": {
         "title": "An Abnormal Transaction Detection Mechanism on Bitcoin",
         "pub_year": "2019"
       },
-      "num_citations": 53
+      "num_citations": 54
     },
     "NQ0z_lgAAAAJ:Tyk-4Ss8FVUC": {
       "bib": {
@@ -138,5 +138,5 @@
     }
   },
   "source_url": "https://scholar.google.com/citations?user=NQ0z_lgAAAAJ",
-  "updated": "2026-11-09T08:08:50.253263+00:00"
+  "updated": "2026-11-10T08:13:54.375260+00:00"
 }
