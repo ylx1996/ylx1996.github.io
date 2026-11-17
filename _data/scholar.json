@@ -1,7 +1,7 @@
 {
   "scholar_id": "NQ0z_lgAAAAJ",
   "name": "Lingxiao Yang",
-  "citedby": 165,
+  "citedby": 166,
   "publications": {
     "NQ0z_lgAAAAJ:u5HHmVD_uO8C": {
       "bib": {
@@ -38,17 +38,17 @@
       },
       "num_citations": 11
     },
-    "NQ0z_lgAAAAJ:WF5omc3nYNoC": {
-      "bib": {
-        "title": "AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things",
-        "pub_year": "2025"
-      },
-      "num_citations": 9
-    },
     "NQ0z_lgAAAAJ:d1gkVwhDpl0C": {
       "bib": {
         "title": "Generic-NFT: A Generic Non-Fungible Token Architecture for Flexible Value Transfer in Web3",
         "pub_year": "2023"
+      },
+      "num_citations": 10
+    },
+    "NQ0z_lgAAAAJ:WF5omc3nYNoC": {
+      "bib": {
+        "title": "AsyncSC: An Asynchronous Sidechain for Multi-Domain Data Exchange in Internet of Things",
+        "pub_year": "2025"
       },
       "num_citations": 9
     },
@@ -145,5 +145,5 @@
     }
   },
   "source_url": "https://scholar.google.com/citations?user=NQ0z_lgAAAAJ",
-  "updated": "2026-11-16T08:11:25.981811+00:00"
+  "updated": "2026-11-17T08:07:33.858090+00:00"
 }
