@@ -1,19 +1,24 @@
 # 💴 Projects
-## National Key Research and Development Program of China (国家重点研发计划)
+<div class="projects-list">
+
+## National-level Projects (国家级项目)
+
+### National Natural Science Foundation of China (国家自然科学基金)
+- *2027.01 - 2029.12*, 面向多域数据要素的异步跨链协同与可信共享方法研究, 青年科学基金项目（C类）, 300K CNY, principal investigator.
+- *2020.01 - 2023.12*, 基于区块链的智能服务跨域安全组合技术研究, 面上项目, B019030041, participant (core research team member).
+
+### National Key Research and Development Program of China (国家重点研发计划)
 - *2023.12 - 2026.11*, 高可靠实时互联的工业无线网络安全关键技术, 2023YFB3107500, 45.93M CNY, participant (core research team member).
 - *2020.11 - 2023.10*, “以链治链”的监管架构与关键技术研究, 2020YFB1005500, 9.17M CNY, participant (core research team member).
 - *2017.07 - 2021.12*, 智能服务交易与监管技术研究, 2017YFB1400700, 38M CNY, participant (core research team member).
 
-## National Natural Science Foundation of China (国家自然科学基金)
-- *2027.01 - 2029.12*, 面向多域数据要素的异步跨链协同与可信共享方法研究, 青年科学基金项目（C类）, 300K CNY, principal investigator.
-- *2020.01 - 2023.12*, 基于区块链的智能服务跨域安全组合技术研究, 面上项目, B019030041, participant (core research team member).
+## Provincial and Ministerial Projects (省部级项目)
+- *2027.01 - 2028.12*, [跨域数据异步因果一致性保障方法研究](https://rst.shaanxi.gov.cn/sy/tzgg/202611/t20261116_3725296.html?sessionid=), 陕西省博士后科研资助项目, 50K CNY, principal investigator.
+- *2023.03 - 2030.03*, 区块链技术应用与评测（教育部工程研究中心）, 12M CNY, member.
 
-## Key Laboratory Open Research Projects (重点实验室开放课题)
-- *2027.01 - 2027.12*, 区块链有序可更新累加证明机制研究, 陕西省先进密码技术重点实验室开放课题, 20K CNY, principal investigator.
+## Laboratory and University Projects (实验室/校级项目)
+- *2027.01 - 2027.12*, 区块链有序可更新累加证明机制研究（陕西省先进密码技术重点实验室开放课题）, 20K CNY, principal investigator.
+- *2021.01 - 2021.12*, 区块链可扩展性优化技术研究（西安电子科技大学研究生创新基金）, 15K CNY, principal investigator.
+- *2023.01 - 2023.12*, “以链治链”的跨链交互监管技术研究（西安电子科技大学研究生创新基金）, 20K CNY, participant.
 
-## Engineering Research Center of Ministry of Education (教育部工程研究中心)
-- *2023.03 - 2030.03*, 区块链技术应用与评测, 12M CNY, member.
-
-## Innovation Fund of Xidian University (西安电子科技大学研究生创新基金)
-- *2023.01 - 2023.12*, “以链治链”的跨链交互监管技术研究, 20K CNY, participant.
-- *2021.01 - 2021.12*, 区块链可扩展性优化技术研究, 15K CNY, principal investigator.
+</div>

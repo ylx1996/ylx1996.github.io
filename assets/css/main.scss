@@ -184,6 +184,19 @@ li a:hover {
   text-decoration: underline;
 }
 
+/* Project links stay visually quiet until the pointer is over them. */
+.projects-list a,
+.projects-list a:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.projects-list a:hover,
+.projects-list a:focus-visible {
+  color: #0000EE !important;
+  text-decoration: underline !important;
+}
+
 /* 特殊修正：导航栏标题 */
 .site-title {
   color: #222222 !important;
