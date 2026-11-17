@@ -1,5 +1,5 @@
 # 💴 Projects
-<div class="projects-list">
+<div class="projects-list" markdown="1">
 
 ## National-level Projects (国家级项目)
 
